@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Morgan Huegel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+  <!-- Sets the favicon -->
+  <link rel="icon" type="image/png" href="./images/brain-idea-clipart.png">
+</head>
+
+<body>
+
+
+  <header role='banner'>
+    <img src='./images/brain-idea-clipart.png' alt='Clipart of a human brain'/>
+    <h1>Morgan Huegel - Web Developer</h1>
+  </header>
+
+
+  <main>
+    <section class='about-me'>
+      <img src='./images/unicycle edited.jpeg' alt='Morgan teaching class on a unicycle' class='unicycle-pic'/>
+
+      <p>Firstly, thank you for your interest in me!  I'm a Web Developer who loves to code, 
+        and I'm skilled in both front- and back-end techniques.  Click below to learn more about me, 
+        or scroll down to summaries of the <a href='#projects'>projects</a> that I've built and my <a href='#contact-info'>contact info</a>.
+      </p>
+
+      <label for='more-about-morgan'>More About Morgan</label>
+      <input id='more-about-morgan' type='image' src='./images/show-more-arrow.png' alt='Button to show more about Morgan'/>
+
+      <p>I began coding in early 2018 and immediately loved it!  To me, coding is like creating an art piece, 
+        where ingenious ideas come to life using logic as the only tool.  After teaching high school math for two years 
+        (yes, I occasionally taught on a unicycle), I decided that I wanted to be a full-time programmer.  I self-taught 
+        briefly before beginning at Thinkful.  The Thinkful experience allowed me to jumpstart my learning, and I quickly 
+        gained an understanding of full-stack Web Development through projects, pair-programming, and mentorship.  
+        The collaboration within the Thinkful team was valuable, and I believe it raised the morale and production of everyone involved.  
+        My goal is to work at a place where teamwork and collaboration is valued.
+      </p>
+
+      <p>In my free time, I enjoy making side projects and going to local tech Meetups.  Then, to convince myself 
+        that I'm not actually just a coding robot, I also find time to run/bike (I did Cross Country/Track in college), 
+        read, and rock climb at the local indoor gym.
+      </p>
+
+      <label for='less-about-morgan'>Hide Life Story</label>
+      <input id='less-about-morgan' type='image' src='./images/show-more-arrow.png' alt='Button to show less about Morgan'/>
+    </section>
+
+
+    <hr class='section-break'>
+
+
+    <section class='projects' id='projects'>
+      <h2>Projects</h2>
+      <div class='project-container'>
+        <h3>Endurance Data</h3>
+        <a href='https://github.com/MorganHuegel/endurance-data-clientside'>GitHub Repo (client-side)</a>
+        <a href='https://github.com/MorganHuegel/endurance-data-serverside'>GitHub Repo (server-side)</a>
+        <a href='https://endurancedata.netlify.com/'>Live App</a>
+        <img class='screenshot' src='./images/screenshot-endurancedata.png' alt='screen shot of Endurance Data'/>
+        <div>
+          <p class='description'>Description: This app serves as a manual-entry workout log for endurance athletes (runners and cyclists).
+            It utilizes user authentication, and user-data is persisted in a database.  As a former collegiate athlete, I used to log my 
+            workouts in a notebook like a barbarian, so I built this app to computerize the process.  Data-analysis feature using D3.js 
+            is on my to-do list.  To preview the live app, use these dummy credentials:
+            <span class='dummy-login'>username: user</span><span class='dummy-login'>password: password</span>
+            <span class='sidenote'>(If you try the 'Change Password' or 'Change Username' feature, please change them back to this!)</span>
+          </p>
+
+          <p class='tech-stack front'>Tech-Stack: This is a full-stack React App.  The state of the front-end is managed using a combination of Redux and stateful 
+            components, and the browser's local storage is utilized for JSON Web Tokens.  Some other NPM packages that are used are redux-thunk, 
+            react-router, react-spinkit and Moment.js.  The HTML is styled using CSS3 with a responsive and mobile-first design, and each component 
+            is tested using Enzyme and Jest.  The app is continuously deployed on Netlify.
+          </p>
+          <p class='tech-stack back'>The back-end is written in Node.js and Express.  Users' passwords are hashed using bcrypt before being stored in the database.  
+            All user data is persisted using MongoDB, hosted on mLab.  Database queries are written using Mongoose, and I wrote my own 
+            middleware function to verify incoming JSON Web Tokens.  The back-end utilizes Mocha &AMP; Chai for testing, TravisCI for continuous 
+            integration and Heroku for continuous deployment.
+          </p>
+        </div>
+        
+        <hr class='project-break'>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer class='contact-info' id='contact-info'>
+    <p>CONTACT INFO HERE</p>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
