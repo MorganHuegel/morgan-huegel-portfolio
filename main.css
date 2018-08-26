@@ -2,10 +2,59 @@ body * {
   padding: 0;
   margin: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 20px;
+  margin: 0px;
+}
+
+
+
+/* Styling the Header */
+header {
+  width: 100vw;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  max-height: 150px;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header img {
+  height: 20vw;
+  max-height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 9vw;
+}
+header span {
+  display: inline-block;
+}
+@media only screen and (min-width: 450px){
+  h1 {
+    font-size: 40.5px;
+  }
+  header img {
+    margin-right: 30px
+  }
+  header {
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 710px){ /* When text wraps to a single line */
+  h1 {
+    padding: 20px 0;  
+  }
 }
 
 .unicycle-pic {
