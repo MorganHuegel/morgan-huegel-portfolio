@@ -64,25 +64,36 @@
       <h2>Projects</h2>
       <div class='project-container'>
         <h3>Endurance Data</h3>
-        <a href='https://github.com/MorganHuegel/endurance-data-clientside'>GitHub Repo (client-side)</a>
-        <a href='https://github.com/MorganHuegel/endurance-data-serverside'>GitHub Repo (server-side)</a>
-        <a href='https://endurancedata.netlify.com/'>Live App</a>
+        <ul class='project-links'>        
+          <li><a href='https://github.com/MorganHuegel/endurance-data-clientside'>GitHub Repo (client-side)</a></li>
+          <li><a href='https://github.com/MorganHuegel/endurance-data-serverside'>GitHub Repo (server-side)</a></li>
+          <li><a href='https://endurancedata.netlify.com/'>Live App</a></li>
+        </ul>
+
         <img class='screenshot' src='./images/screenshot-endurancedata.png' alt='screen shot of Endurance Data'/>
         <div>
-          <p class='description'>Description: This app serves as a manual-entry workout log for endurance athletes (runners and cyclists).
+          <p class='project-content description'><span class='project-content-title'>Description:</span> This app serves as a manual-entry workout log for endurance athletes (runners and cyclists).
             It utilizes user authentication, and user-data is persisted in a database.  As a former collegiate athlete, I used to log my 
             workouts in a notebook like a barbarian, so I built this app to computerize the process.  Data-analysis feature using D3.js 
             is on my to-do list.  To preview the live app, use these dummy credentials:
-            <span class='dummy-login'>username: user</span><span class='dummy-login'>password: password</span>
-            <span class='sidenote'>(If you try the 'Change Password' or 'Change Username' feature, please change them back to this!)</span>
           </p>
+          <div class='project-content dummy-credentials'>
+            <span class='dummy-login'>
+              <strong>username:</strong> <span class='dummy-user'>user</span>
+            </span>
+            <span class='dummy-login'>
+              <strong>password: </strong><span class='dummy-user'>password</span>
+            </span>
 
-          <p class='tech-stack front'>Tech-Stack: This is a full-stack React App.  The state of the front-end is managed using a combination of Redux and stateful 
+            <span class='sidenote'>(If you try the 'Change Password' or 'Change Username' feature, please change them back!)</span>
+          </div>
+
+          <p class='project-content tech-stack front'><span class='project-content-title'>Tech-Stack:</span> This is a full-stack React App.  The state of the front-end is managed using a combination of Redux and stateful 
             components, and the browser's local storage is utilized for JSON Web Tokens.  Some other NPM packages that are used are redux-thunk, 
             react-router, react-spinkit and Moment.js.  The HTML is styled using CSS3 with a responsive and mobile-first design, and each component 
             is tested using Enzyme and Jest.  The app is continuously deployed on Netlify.
           </p>
-          <p class='tech-stack back'>The back-end is written in Node.js and Express.  Users' passwords are hashed using bcrypt before being stored in the database.  
+          <p class='project-section tech-stack back'>The back-end is written in Node.js and Express.  Users' passwords are hashed using bcrypt before being stored in the database.  
             All user data is persisted using MongoDB, hosted on mLab.  Database queries are written using Mongoose, and I wrote my own 
             middleware function to verify incoming JSON Web Tokens.  The back-end utilizes Mocha &AMP; Chai for testing, TravisCI for continuous 
             integration and Heroku for continuous deployment.

@@ -20,7 +20,7 @@ hr {
 
 
 
-/* Styling the Header */
+/* --------------------- Styling the Header ------------------------ */
 header {
   width: 100vw;
   background-color: black;
@@ -70,16 +70,12 @@ header span {
 
 
 
-/* Styling for ABOUT ME */
+/* --------------- Styling for ABOUT ME ---------------- */
 main {
   padding: 10px;
   font-size: 5vw;
   max-width: 1000px;
   margin: 0 auto;
-}
-
-h2, h3 {
-  font-family: 'Permanent Marker', cursive;
 }
 
 .about-me {
@@ -93,9 +89,9 @@ h2, h3 {
   border: 1px solid black;
 }
 
-/* .life-story {
+.life-story {
   display: none;
-} */
+}
 
 p.life-story {
   margin-top: 15px;
@@ -140,7 +136,7 @@ label[for='more-about-morgan'] {
     height: 50vw;
   }
   .about-me-text {
-    min-height: 300px;
+    min-height: 50vw;
     padding: 60px 0;
   }
 }
@@ -149,12 +145,110 @@ label[for='more-about-morgan'] {
   .unicycle-pic {
     height: 450px;
   }
+  .about-me-text {
+    min-height: 450px;
+  }
 }
 
 
 
 
+
+/* ---------- Styling for Projects Section ------------ */
+.projects {
+  text-align: center;
+}
+
+h2, h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.projects h2 {
+  font-size: 10vw;
+  margin-bottom: 15px;
+}
+
+.projects h3 {
+  font-size: 8vw;
+  margin-bottom: 10px;
+}
+
+.projects li {
+  margin-bottom: 15px;
+}
+
+.project-content {
+  margin-bottom: 30px;
+}
+.project-content.dummy-credentials {
+  margin: -20px auto 30px auto;
+  max-width: 705px;
+}
+
+.project-content-title {
+  font-style: italic;
+}
+
 .screenshot {
   max-width: 500px;
   width: 100%;
+  margin-bottom: 10px;
+}
+.dummy-login {
+  text-align: center;
+  display: inline-block;
+  width: 49%;
+}
+.dummy-user {
+  font-style: italic;
+}
+.sidenote {
+  display: block;
+  font-style: italic;
+  font-size: 4.5vw;
+  margin: 10px 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 450px){
+  .projects h2 {
+    font-size: 45px;
+  }
+  .projects h3 {
+    font-size: 36px;
+  }
+  .sidenote {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .projects {
+    text-align: left;
+  }
+  .project-container {
+    padding: 0 10px 0 20px;
+  }
+  .projects h2 {
+    text-align: left;
+  }
+  .projects ul {
+    display: inline-block;
+  }
+  .projects li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .screenshot {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  .project-content.dummy-credentials {
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 10px;
+  }
 }
