@@ -9,6 +9,15 @@ body {
   margin: 0px;
 }
 
+body a:hover, body a:focus, body input:hover, body input:focus {
+  background-color: rgb(200, 200, 200);
+}
+
+hr {
+  margin: 15px auto;
+}
+
+
 
 
 /* Styling the Header */
@@ -18,54 +27,134 @@ header {
   color: white;
   padding: 10px;
   max-height: 150px;
-  margin-bottom: 20px;
 }
 
 .header-container {
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
 header img {
-  height: 20vw;
-  max-height: 100px;
+  height: 22vw;
+  max-height: 110px;
   float: left;
   margin-right: 10px;
 }
 
 h1 {
-  font-size: 9vw;
+  font-size: 8vw;
+  font-family: 'Permanent Marker', cursive;
 }
 header span {
   display: inline-block;
 }
+
 @media only screen and (min-width: 450px){
   h1 {
-    font-size: 40.5px;
+    font-size: 36px;
   }
   header img {
     margin-right: 30px
   }
   header {
-    height: 120px;
+    height: 130px;
   }
 }
 
-@media only screen and (min-width: 710px){ /* When text wraps to a single line */
+@media only screen and (min-width: 744px){ /* When text wraps to a single line */
   h1 {
     padding: 20px 0;  
   }
 }
 
+
+
+
+/* Styling for ABOUT ME */
+main {
+  padding: 10px;
+  font-size: 5vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.about-me {
+  text-align: center;
+}
+
 .unicycle-pic {
   height: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
 }
 
-#more-about-morgan, #less-about-morgan {
-  width:50px;
-  height: 30px;
+/* .life-story {
+  display: none;
+} */
+
+p.life-story {
+  margin-top: 15px;
 }
+
+.life-story a {
+  font-style: italic;
+}
+
+label {
+  display: block;
+  font-style: italic;
+  font-size: 4.2vw;
+}
+
+label[for='more-about-morgan'] {
+  margin-top: 10px;
+}
+
+#more-about-morgan, #less-about-morgan { /* The SHOW-MORE and SHOW-LESS buttons */
+  width:50px;
+  height: 25px;
+}
+
+#less-about-morgan {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 400px){
+  main {
+    font-size: 20px;
+  }
+  label {
+    font-size: 16.8px;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .unicycle-pic {
+    float: left;
+    margin: 0 10px 10px 0;
+    height: 50vw;
+  }
+  .about-me-text {
+    min-height: 300px;
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (min-width:900px){
+  .unicycle-pic {
+    height: 450px;
+  }
+}
+
+
+
 
 .screenshot {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
