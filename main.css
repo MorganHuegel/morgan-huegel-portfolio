@@ -7,7 +7,6 @@ body * {
 
 body {
   margin: 0px;
-  background-color: black;
 }
 
 body a:hover, body a:focus, body input:hover, body input:focus {
@@ -32,6 +31,7 @@ header {
   color: white;
   padding: 10px;
   max-height: 150px;
+  background-color: black;
 }
 
 .header-container {
@@ -267,6 +267,7 @@ h2, h3 {
 
 /* -------------- Styling for Footer/Contact Info -------------- */
 footer {
+  background-color: black;
   padding: 10px;
   color: white;
   text-align: center;
