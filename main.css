@@ -22,6 +22,11 @@ hr {
   margin: 15px auto;
 }
 
+p {
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
 
 
 
@@ -48,7 +53,7 @@ header img {
 
 h1 {
   font-size: 8vw;
-  font-family: 'Permanent Marker', cursive;
+  font-family: sans-serif;
 }
 header span {
   display: inline-block;
@@ -86,14 +91,37 @@ main {
 
 .about-me {
   text-align: center;
+  background-image: url('./images/gears-idea-clipart.jpg');
+}
+
+.about-me-text {
+  background-clip: content-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px white;
+}
+
+.unicycle-pic-container {
+  height: 30vw;
 }
 
 .unicycle-pic {
-  height: 300px;
+  position: absolute;
+  clip: rect(2vw, 38vw, 27vw, 14vw);
+  height: 93vw;
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid black;
+  left: 25.5vw;
 }
+/* On Expand: {
+  .unicyle-pic {
+    clip: inherit;
+  }
+  .unicycle-pic-container {
+    height: 96vw;
+  }
+} */
+
 
 .life-story {
   display: none;
@@ -169,7 +197,7 @@ label[for='more-about-morgan'] {
 }
 
 h2, h3 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: sans-serif;
 }
 
 .projects h2 {
