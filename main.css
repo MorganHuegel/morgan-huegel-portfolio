@@ -113,14 +113,6 @@ main {
   border: 1px solid black;
   left: 25.5vw;
 }
-/* On Expand: {
-  .unicyle-pic {
-    clip: inherit;
-  }
-  .unicycle-pic-container {
-    height: 96vw;
-  }
-} */
 
 
 .life-story {
@@ -165,13 +157,18 @@ label[for='more-about-morgan'] {
 
 @media only screen and (min-width: 600px){
   .unicycle-pic {
+    width: 100%;
+    clip: rect(12px, 228px, 162px, 84px);
+  }
+  .unicycle-pic-container {
     float: left;
-    margin: 0 10px 10px 0;
-    height: 50vw;
+    height: 180px;
+    /* display:inline-block; */
+    width: 248px;
   }
   .about-me-text {
-    min-height: 50vw;
-    padding: 60px 0;
+    display: inline-block;
+    width: calc(100% - 250px);
   }
   main {
     padding: 10px 20px;
@@ -279,14 +276,19 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1000px){
-  .screenshot {
+  .screenshot.endurancedata{
     float: left;
-    margin: 0 15px 0 0;
+    margin: 10px 15px 0 0;
+  }
+  .screenshot.bookmark-app{
+    float: right;
+    margin: 0 0 0 15px;
   }
   .project-content.dummy-credentials {
     display: inline-block;
     width: 400px;
     margin-bottom: 10px;
+    margin-left: 500px;
   }
 }
 
@@ -299,6 +301,7 @@ footer {
   padding: 10px;
   color: white;
   text-align: center;
+  margin-top: 40px;
 }
 
 footer p {

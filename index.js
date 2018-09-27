@@ -31,7 +31,7 @@ function eventListeners(){
       $('.about-me-text').css('display', 'inline-block');
       $('.about-me-text').css('width', '65vw');
     }
-    $('.unicycle-pic').css('clip', 'inherit');
+    $('.unicycle-pic').css('clip', 'initial');
     $('.unicycle-pic-container').css('height', '96vw');
     $('#more-about-morgan').hide();
     $('label[for=more-about-morgan]').hide();
