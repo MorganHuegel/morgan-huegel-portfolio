@@ -7,6 +7,7 @@ body * {
 
 body {
   margin: 0px;
+  background-color: black;
 }
 
 body a:hover, body a:focus, body input:hover, body input:focus {
@@ -95,23 +96,31 @@ main {
 }
 
 .about-me-text {
+  margin-top: 10px;
   background-clip: content-box;
   background-color: rgba(255, 255, 255, 0.5);
   text-shadow: 1px 1px white;
 }
 
-.unicycle-pic-container {
-  height: 30vw;
+
+
+.unicycle-pic-height {
+  height: 200px;
+  overflow: hidden;
 }
 
-.unicycle-pic {
-  position: absolute;
-  clip: rect(2vw, 38vw, 27vw, 14vw);
-  height: 93vw;
-  padding: 5px;
-  margin-bottom: 10px;
+.unicycle-pic-width {
   border: 1px solid black;
-  left: 25.5vw;
+  padding: 5px;
+  background-image: url('./images/unicycle edited.jpeg');
+  background-clip: content-box;
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 90vw;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 
@@ -156,32 +165,11 @@ label[for='more-about-morgan'] {
 }
 
 @media only screen and (min-width: 600px){
-  .unicycle-pic {
-    width: 100%;
-    clip: rect(12px, 228px, 162px, 84px);
-  }
-  .unicycle-pic-container {
-    float: left;
-    height: 180px;
-    /* display:inline-block; */
-    width: 248px;
-  }
-  .about-me-text {
-    display: inline-block;
-    width: calc(100% - 250px);
-  }
-  main {
-    padding: 10px 20px;
-  }
+
 }
 
 @media only screen and (min-width:900px){
-  .unicycle-pic {
-    height: 450px;
-  }
-  .about-me-text {
-    min-height: 450px;
-  }
+
 }
 
 
