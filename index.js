@@ -4,7 +4,7 @@
 
 function eventListeners(){
   //Expand more-about-morgan info
-  $('.about-me').on('click', '#more-about-morgan', function(){
+  $('.about-me, .unicycle-pic-width').on('click', '#more-about-morgan, .unicycle-pic-width', function(){
     const screenWidth = $('body').width();
     $('.unicycle-pic-height').css('height', '555px');
     $('#more-about-morgan').hide();

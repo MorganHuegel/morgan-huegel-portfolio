@@ -168,6 +168,7 @@ label {
   display: block;
   font-style: italic;
   font-size: 4.2vw;
+  text-align: center;
 }
 
 label[for='more-about-morgan'] {
@@ -177,7 +178,13 @@ label[for='more-about-morgan'] {
 #more-about-morgan, #less-about-morgan { /* The SHOW-MORE and SHOW-LESS buttons */
   width:50px;
   height: 25px;
+  text-align: center;
 }
+
+.more-about-morgan-container, .less-about-morgan-container {
+  text-align: center;
+}
+
 
 #less-about-morgan {
   margin-top: 10px;
@@ -189,6 +196,11 @@ label[for='more-about-morgan'] {
   }
   label {
     font-size: 16.8px;
+  }
+
+  .about-me-text {
+    text-align: left;
+    padding: 0 10px;
   }
 }
 
@@ -259,8 +271,15 @@ h2, h3 {
   margin: 10px 0;
   text-align: center;
 }
+@media only screen and (min-width: 400px){
+  .projects {
+    text-align: left;
+    padding: 0 10px;
+  }
+}
 
 @media only screen and (min-width: 450px){
+
   .projects h2 {
     font-size: 45px;
   }
@@ -273,9 +292,6 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 600px){
-  .projects {
-    text-align: left;
-  }
   .project-container {
     padding: 0 10px 0 20px;
   }

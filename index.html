@@ -55,7 +55,9 @@
         </p>
 
         <label for='more-about-morgan'>More About Morgan</label>
-        <input id='more-about-morgan' type='image' src='./images/show-more-arrow.png' alt='Button to show more about Morgan'/>
+        <div class='more-about-morgan-container'>
+          <input id='more-about-morgan' type='image' src='./images/show-more-arrow.png' alt='Button to show more about Morgan'/>
+        </div>
 
         <p class='life-story'>I began coding in early 2018 and immediately loved it!  To me, coding is like creating an art piece, 
           where ingenious ideas come to life using logic as the only tool.  After teaching high school math for two years 
@@ -71,7 +73,9 @@
           read, and rock climb at the local indoor gym.
         </p>
 
-        <input id='less-about-morgan' type='image' src='./images/show-more-arrow-up.png' alt='Button to show less about Morgan' class='life-story'/>
+        <div class='less-about-morgan-container'>
+          <input id='less-about-morgan' type='image' src='./images/show-more-arrow-up.png' alt='Button to show less about Morgan' class='life-story'/>
+        </div>
         <label for='less-about-morgan' class='life-story'>Hide Life Story</label>
       </div>
     </section>
@@ -119,35 +123,36 @@
             integration and Heroku for continuous deployment.
           </p>
         </div>
+      </div>
         
-        <hr class='project-break'>
+      <hr class='project-break'>
 
-        <div class='project-container'>
-          <h3>Bookmark App</h3>
-          <ul class='project-links'>        
-            <li><a href='https://github.com/MorganHuegel/bookmark-app'>GitHub repo</a></li>
-            <li><a href='https://morgan-huegel-bookmarks.herokuapp.com/'>Live App</a></li>
-          </ul>
-  
-          <img class='screenshot bookmark-app' src='./images/bookmark-app-screenshot.png' alt='screen shot of Bookmark App'/>
-          <div>
-            <p class='project-content description'><span class='project-content-title'>Description:</span> This app was built
-              to manage url bookmarks.  The bookmarks can be stored with a description and rating, and the bookmark list can 
-              be filtered by rating.  As of now, there is no user authentication, so all bookmarks will be displayed publicly.
-              This was my first full-stack project, so it is very simple but usable.
-            </p>
-  
-            <p class='project-content tech-stack front'><span class='project-content-title'>Tech-Stack:</span> The front-end of this
-              app uses HTML5, CSS3, and jQuery for the DOM Manipulation and AJAX calls.  The app is styled with mobile-devices in mind,
-              but the styling is responsive to changing screen widths.
-            </p>
-            <p class='project-section tech-stack back'>The server-side is written in Node.js and Express.  All of the bookmark
-              data is persisted in a SQL database hosted on ElephantSQL.  Database queries are written using Knex NPM package,
-              and the app is deployed continuously on Heroku.
-            </p>
-          </div>
+      <div class='project-container'>
+        <h3>Bookmark App</h3>
+        <ul class='project-links'>        
+          <li><a href='https://github.com/MorganHuegel/bookmark-app'>GitHub repo</a></li>
+          <li><a href='https://morgan-huegel-bookmarks.herokuapp.com/'>Live App</a></li>
+        </ul>
 
+        <img class='screenshot bookmark-app' src='./images/bookmark-app-screenshot.png' alt='screen shot of Bookmark App'/>
+        <div>
+          <p class='project-content description'><span class='project-content-title'>Description:</span> This app was built
+            to manage url bookmarks.  The bookmarks can be stored with a description and rating, and the bookmark list can 
+            be filtered by rating.  As of now, there is no user authentication, so all bookmarks will be displayed publicly.
+            This was my first full-stack project, so it is very simple but usable.
+          </p>
+
+          <p class='project-content tech-stack front'><span class='project-content-title'>Tech-Stack:</span> The front-end of this
+            app uses HTML5, CSS3, and jQuery for the DOM Manipulation and AJAX calls.  The app is styled with mobile-devices in mind,
+            but the styling is responsive to changing screen widths.
+          </p>
+          <p class='project-section tech-stack back'>The server-side is written in Node.js and Express.  All of the bookmark
+            data is persisted in a SQL database hosted on ElephantSQL.  Database queries are written using Knex NPM package,
+            and the app is deployed continuously on Heroku.
+          </p>
         </div>
+      </div>
+      
     </section>
   </main>
 
