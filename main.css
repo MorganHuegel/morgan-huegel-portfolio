@@ -79,7 +79,35 @@ header span {
 }
 
 
+/* --------------- Styling for ICON CONTACT INFO ---------------- */
+address.icon-contacts {
+  width: 100vw;
+  max-width: 1000px;
+  background-color: white;
+  padding-top: 10px;
+  margin: 0 auto;
+}
 
+ul.icon-contacts {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+ul.icon-contacts img {
+  width: 50px;
+}
+
+ul.icon-contacts a {
+  background-color: initial;
+}
+
+ul.icon-contacts li {
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+}
 
 /* --------------- Styling for ABOUT ME ---------------- */
 main {
