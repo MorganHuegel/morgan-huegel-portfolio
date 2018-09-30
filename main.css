@@ -109,6 +109,8 @@ ul.icon-contacts li {
   width: 32%;
 }
 
+
+
 /* --------------- Styling for ABOUT ME ---------------- */
 main {
   background-color: white;
@@ -271,6 +273,41 @@ h2, h3 {
   margin: 10px 0;
   text-align: center;
 }
+
+
+
+
+.front-end, .back-end {
+  display: inline-block;
+  width: 47%;
+  padding: 0 10px 10px 20px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.back-end {
+  border-left: 1px solid black;
+}
+
+.projects .tech-stack {
+  display: block;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.projects li.stack-item {
+  line-height: 1em;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.tech-stack-header {
+  text-decoration: underline;
+  display: block;
+}
+
 @media only screen and (min-width: 400px){
   .projects {
     text-align: left;
