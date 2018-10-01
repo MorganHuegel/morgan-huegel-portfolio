@@ -348,9 +348,9 @@ h2, h3 {
   .projects h2 {
     text-align: left;
   }
-  .projects ul {
+  /* .projects ul {
     display: inline-block;
-  }
+  } */
   .projects li {
     display: inline-block;
     margin-right: 10px;
