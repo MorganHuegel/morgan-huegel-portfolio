@@ -24,8 +24,14 @@ hr {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 10vw;
   font-family: sans-serif;
+}
+
+@media only screen and (min-width: 400px) {
+  p {
+    line-height: 40px;
+  }
 }
 
 
@@ -49,7 +55,7 @@ header img {
   height: 19vw;
   max-height: 80px;
   float: left;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 h1 {
@@ -63,9 +69,6 @@ header span {
 @media only screen and (min-width: 450px){
   h1 {
     font-size: 36px;
-  }
-  header img {
-    margin-right: 30px
   }
   header {
     height: 102px;
@@ -153,6 +156,10 @@ main {
   margin: 0 auto;
 }
 
+.unicycle-pic-width:hover {
+  cursor: pointer;
+}
+
 
 .life-story {
   display: none;
@@ -204,14 +211,6 @@ label[for='more-about-morgan'] {
     text-align: left;
     padding: 0 10px;
   }
-}
-
-@media only screen and (min-width: 600px){
-
-}
-
-@media only screen and (min-width:900px){
-
 }
 
 
@@ -283,6 +282,7 @@ h2, h3 {
   padding: 0 10px 10px 20px;
   vertical-align: top;
   margin-top: 10px;
+  font-size: 4.5vw;
 }
 
 .back-end {
@@ -291,13 +291,13 @@ h2, h3 {
 
 .projects .tech-stack {
   display: block;
-  line-height: 1.6;
+  line-height: 10vw;
   font-family: sans-serif;
 }
 
 .projects li.stack-item {
   line-height: 1em;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -306,12 +306,25 @@ h2, h3 {
 .tech-stack-header {
   text-decoration: underline;
   display: block;
+  font-style: italic;
 }
 
 @media only screen and (min-width: 400px){
+
+  .front-end, .back-end {
+    font-size: 18px;
+  }
+
+  .projects .tech-stack {
+    line-height: 40px;
+  }
+
   .projects {
     text-align: left;
     padding: 0 10px;
+  }
+  .front-end ul, .back-end ul {
+    padding-left: 10px;
   }
 }
 
@@ -353,18 +366,16 @@ h2, h3 {
     float: right;
     margin: 0 0 0 15px;
   }
-  .project-content.dummy-credentials {
-    display: inline-block;
-    width: 400px;
-    margin-bottom: 10px;
-    margin-left: 500px;
-  }
 }
 
 
 
 
 /* -------------- Styling for Footer/Contact Info -------------- */
+footer a:hover, footer a:focus {
+  background-color: rgb(80, 80, 80);
+}
+
 footer {
   background-color: black;
   padding: 10px;

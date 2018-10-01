@@ -44,7 +44,7 @@
   <main>
     <section class='about-me'>
       <div class='unicycle-pic-height'>   
-        <div class='unicycle-pic-width'>
+        <div class='unicycle-pic-width short'>
         </div>   
       </div>
 
@@ -59,13 +59,11 @@
           <input id='more-about-morgan' type='image' src='./images/show-more-arrow.png' alt='Button to show more about Morgan'/>
         </div>
 
-        <p class='life-story'>I began coding in early 2018 and immediately loved it!  To me, coding is like creating an art piece, 
-          where ingenious ideas come to life using logic as the only tool.  After teaching high school math for two years 
-          (<a href='https://twitter.com/RHS_Principal_/status/930611022607593472' target='blank'>yes, I occasionally taught on a unicycle</a>), I decided that I wanted to be a full-time programmer.  I self-taught 
-          briefly before beginning at Thinkful.  The Thinkful experience allowed me to jumpstart my learning, and I quickly 
-          gained an understanding of full-stack Web Development through projects, pair-programming, and mentorship.  
-          The collaboration within the Thinkful team was valuable, and I believe it raised the morale and production of everyone involved.  
-          My goal is to work at a place where teamwork and collaboration is valued.
+        <p class='life-story'>I began coding in early 2018 and immediately loved it!  After teaching high school math for two years 
+          (<a href='https://twitter.com/RHS_Principal_/status/930611022607593472' target='blank'>yes, I occasionally taught on a unicycle</a>), 
+          I decided that I wanted to be a full-time programmer.  I self-taught briefly before beginning at Thinkful.  Through projects, pair-programming, 
+          and Thinkful mentorship, I quickly gained an understanding of full-stack Web Development.  Thinkful has since asked me to lead their local 
+          Learn-to-Code workshops, which I do two nights-a-week.
         </p>
 
         <p class='life-story'>In my free time, I enjoy making side projects and going to local tech Meetups.  Then, to convince myself 
@@ -86,18 +84,18 @@
 
     <section class='projects' id='projects'>
       <h2>Projects</h2>
-      <div class='project-container'>
+      <div class='project-container endurance-data'>
         <h3>Endurance Data</h3>
         <ul class='project-links'>        
-          <li><a href='https://github.com/MorganHuegel/endurance-data-clientside'>GitHub Repo (client-side)</a></li>
-          <li><a href='https://github.com/MorganHuegel/endurance-data-serverside'>GitHub Repo (server-side)</a></li>
-          <li><a href='https://endurancedata.netlify.com/'>Live App</a></li>
+          <li><a href='https://github.com/MorganHuegel/endurance-data-clientside' target='_blank'>GitHub Repo (client-side)</a></li>
+          <li><a href='https://github.com/MorganHuegel/endurance-data-serverside' target='_blank'>GitHub Repo (server-side)</a></li>
+          <li><a href='https://endurancedata.netlify.com/' target='_blank'>Live App</a></li>
         </ul>
 
         <img class='screenshot endurancedata' src='./images/screenshot-endurancedata.png' alt='screen shot of Endurance Data'/>
         <div>
           <p class='project-content description'><span class='project-content-title'>Description:</span> This app serves as a manual-entry workout log for endurance athletes (runners and cyclists).
-            It utilizes user authentication, and user-data is persisted in a database.  As a former collegiate athlete, I used to log my 
+            Each user's workout data is stored in a database.  As a former collegiate athlete, I used to log my 
             workouts in a notebook like a barbarian, so I built this app to computerize the process.  Data-analysis feature using D3.js 
             is on my to-do list.  To preview the live app, use these dummy credentials:
           </p>
@@ -119,7 +117,6 @@
               <ul>
                 <li class='stack-item'>React</li>
                 <li class='stack-item'>Redux</li>
-                <li class='stack-item'>JSON Web Tokens</li>
                 <li class='stack-item'>Moment.js</li>
                 <li class='stack-item'>Redux-Thunk</li>
                 <li class='stack-item'>React-Router</li>
@@ -127,6 +124,7 @@
                 <li class='stack-item'>Enzyme/Jest</li>
                 <li class='stack-item'>HTML5</li>
                 <li class='stack-item'>CSS3</li>
+                <li class='stack-item'>Responsive Design</li>
                 <li class='stack-item'>Continuous Deployment (Netlify)</li>
               </ul>
             </li>
@@ -134,29 +132,20 @@
             <li class='back-end'>
               <span class='tech-stack-header'>Back-End:</span>
               <ul>
-                <li class='stack-item'>React</li>
-                <li class='stack-item'>Redux</li>
+                <li class='stack-item'>Node.js</li>
+                <li class='stack-item'>Express</li>
+                <li class='stack-item'>MongoDB</li>
+                <li class='stack-item'>Mongoose</li>
+                <li class='stack-item'>Bcrypt</li>
                 <li class='stack-item'>JSON Web Tokens</li>
-                <li class='stack-item'>Moment.js</li>
-                <li class='stack-item'>Redux-Thunk</li>
-                <li class='stack-item'>React-Router</li>
-                <li class='stack-item'>React-Spinkit</li>
-                <li class='stack-item'>Enzyme/Jest</li>
-                <li class='stack-item'>Continuous Deployment (Netlify)</li>
+                <li class='stack-item'>Mocha/Chai</li>
+                <li class='stack-item'>Continuous Integration (Travis-CI)</li>
+                <li class='stack-item'>Continuous Deployment (Heroku)</li>
               </ul>
             </li>
 
           </ul>
-            
-            <!-- This is a full-stack React App.  The state of the front-end is managed using a combination of Redux and stateful 
-            components, and the browser's local storage is utilized for JSON Web Tokens.  Some other NPM packages that are used are redux-thunk, 
-            react-router, react-spinkit and Moment.js.  The HTML is styled using CSS3 with a responsive and mobile-first design, and each component 
-            is tested using Enzyme and Jest.  The app is continuously deployed on Netlify.
-          <p class='project-section tech-stack back'>The back-end is written in Node.js and Express.  Users' passwords are hashed using bcrypt before being stored in the database.  
-            All user data is persisted using MongoDB, hosted on mLab.  Database queries are written using Mongoose, and I wrote my own 
-            middleware function to verify incoming JSON Web Tokens.  The back-end utilizes Mocha &AMP; Chai for testing, TravisCI for continuous 
-            integration and Heroku for continuous deployment.
-          </p> -->
+
         </div>
       </div>
         
@@ -165,8 +154,8 @@
       <div class='project-container'>
         <h3>Bookmark App</h3>
         <ul class='project-links'>        
-          <li><a href='https://github.com/MorganHuegel/bookmark-app'>GitHub repo</a></li>
-          <li><a href='https://morgan-huegel-bookmarks.herokuapp.com/'>Live App</a></li>
+          <li><a href='https://github.com/MorganHuegel/bookmark-app' target='_blank'>GitHub repo</a></li>
+          <li><a href='https://morgan-huegel-bookmarks.herokuapp.com/' target='_blank'>Live App</a></li>
         </ul>
 
         <img class='screenshot bookmark-app' src='./images/bookmark-app-screenshot.png' alt='screen shot of Bookmark App'/>
@@ -177,14 +166,31 @@
             This was my first full-stack project, so it is very simple but usable.
           </p>
 
-          <p class='project-content tech-stack front'><span class='project-content-title'>Tech-Stack:</span> The front-end of this
-            app uses HTML5, CSS3, and jQuery for the DOM Manipulation and AJAX calls.  The app is styled with mobile-devices in mind,
-            but the styling is responsive to changing screen widths.
-          </p>
-          <p class='project-section tech-stack back'>The server-side is written in Node.js and Express.  All of the bookmark
-            data is persisted in a SQL database hosted on ElephantSQL.  Database queries are written using Knex NPM package,
-            and the app is deployed continuously on Heroku.
-          </p>
+          <ul class='tech-stack'>
+            <p class='project-content-title'>Tech-Stack:</p>
+            <li class='front-end'>
+              <span class='tech-stack-header'>Front-End:</span>
+              <ul>
+                <li class='stack-item'>HTML5</li>
+                <li class='stack-item'>CSS3</li>
+                <li class='stack-item'>J-Query</li>
+                <li class='stack-item'>Responsive Design</li>
+              </ul>
+            </li>
+
+            <li class='back-end'>
+              <span class='tech-stack-header'>Back-End:</span>
+              <ul>
+                <li class='stack-item'>Node.js</li>
+                <li class='stack-item'>Express</li>
+                <li class='stack-item'>SQL Database</li>
+                <li class='stack-item'>Knex</li>
+                <li class='stack-item'>Continuous Deployment (Heroku)</li>
+              </ul>
+            </li>
+
+          </ul>
+
         </div>
       </div>
 
@@ -200,8 +206,8 @@
         <ul>
           <li>Email: <a href='mailto:mhue2910@gmail.com'>mhue2910@gmail.com</a></li>
           <li>Phone: 814-673-0233</li>
-          <li><a href='https://www.linkedin.com/in/morganhuegel/'>LinkedIn</a></li>
-          <li><a href='https://github.com/MorganHuegel'>GitHub</a></li>
+          <li><a href='https://www.linkedin.com/in/morganhuegel/' target='_blank'>LinkedIn</a></li>
+          <li><a href='https://github.com/MorganHuegel' target='_blank'>GitHub</a></li>
         </ul>
       </address>
     </div>
