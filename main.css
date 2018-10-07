@@ -20,7 +20,7 @@ body a {
 }
 
 hr {
-  margin: 15px auto;
+  margin: 25px auto;
 }
 
 p {
@@ -228,7 +228,7 @@ h2, h3 {
 
 .projects h2 {
   font-size: 10vw;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .projects h3 {
@@ -256,6 +256,9 @@ h2, h3 {
   max-width: 500px;
   width: 100%;
   margin-bottom: 10px;
+}
+.screenshot.word-search-generator {
+  border: 1px solid rgb(240, 240, 240)
 }
 .dummy-login {
   text-align: center;
@@ -285,8 +288,8 @@ h2, h3 {
   font-size: 4.5vw;
 }
 
-.back-end {
-  border-left: 1px solid black;
+.front-end {
+  border-right: 1px solid gray;
 }
 
 .projects .tech-stack {
@@ -345,12 +348,6 @@ h2, h3 {
   .project-container {
     padding: 0 10px 0 20px;
   }
-  .projects h2 {
-    text-align: left;
-  }
-  /* .projects ul {
-    display: inline-block;
-  } */
   .projects li {
     display: inline-block;
     margin-right: 10px;
@@ -358,11 +355,20 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1000px){
-  .screenshot.endurancedata{
-    float: left;
+  .screenshot.endurancedata {
+    float: right;
     margin: 10px 15px 0 0;
   }
-  .screenshot.bookmark-app{
+  .screenshot.word-search-generator {
+    display: inline-block;
+  }
+  .word-search-generator .project-content.description {
+    display: inline-block;
+    width: 410px;
+    vertical-align: top;
+    margin-left: 10px;
+  }
+  .screenshot.bookmark-app {
     float: right;
     margin: 0 0 0 15px;
   }
