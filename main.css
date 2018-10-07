@@ -23,6 +23,10 @@ hr {
   margin: 25px auto;
 }
 
+hr.project-break {
+  margin-bottom: 40px;
+}
+
 p {
   line-height: 10vw;
   font-family: sans-serif;
@@ -355,7 +359,7 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1000px){
-  .screenshot.endurancedata {
+  .screenshot.endurancedata, .screenshot.atlas {
     float: right;
     margin: 10px 15px 0 0;
   }

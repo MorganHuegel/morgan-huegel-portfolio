@@ -89,6 +89,72 @@
     <section class='projects' id='projects'>
       <h2>Projects</h2>
 
+      <div class='project-container atlas'>
+        <h3>Atlas</h3>
+        <ul class='project-links'>
+          <li><a href='https://github.com/thinkful-ei22/morgan-cecille-spaced-rep-client' target='_blank'>GitHub Repo (client-side)</a></li>
+          <li><a href='https://github.com/thinkful-ei22/morgan-cecille-spaced-rep-server' target='_blank'>GitHub Repo (server-side)</a></li>
+          <li><a href='https://countries-client.herokuapp.com/' target='_blank'>Live App</a></li>
+        </ul>
+
+        <img class='screenshot atlas' src='./images/atlas-screnshop.png' alt='screen shot of Atlas app'/>
+        <div>
+          <p class='project-content description'><span class='project-content-title'>Description:</span> This app serves as a tool for learning geography. 
+            A map is shown with a particular country highlighted, and users try to enter the correct country name.  A users progress is tracked, 
+            and a spaced-repetion algorithm is used to make sure that a user will see missed questions more frequently.  
+            To preview the live app, use these dummy credentials:
+          </p>
+          <div class='project-content dummy-credentials'>
+            <span class='dummy-login'>
+              <strong>username:</strong> <span class='dummy-user'>demouser</span>
+            </span>
+            <span class='dummy-login'>
+              <strong>password: </strong><span class='dummy-user'>password</span>
+            </span>
+          </div>
+
+          <ul class='tech-stack'>
+            <p class='project-content-title'>Tech-Stack:</p>
+            <li class='front-end'>
+              <span class='tech-stack-header'>Front-End:</span>
+              <ul>
+                <li class='stack-item'>React</li>
+                <li class='stack-item'>Redux</li>
+                <li class='stack-item'>Redux-Thunk</li>
+                <li class='stack-item'>React-Router</li>
+                <li class='stack-item'>React-Spinkit</li>
+                <li class='stack-item'>HTML5</li>
+                <li class='stack-item'>CSS3</li>
+                <li class='stack-item'>Responsive Design</li>
+                <li class='stack-item'>Continuous Deployment (Netlify)</li>
+              </ul>
+            </li>
+
+            <li class='back-end'>
+              <span class='tech-stack-header'>Back-End:</span>
+              <ul>
+                <li class='stack-item'>Node.js</li>
+                <li class='stack-item'>Express</li>
+                <li class='stack-item'>MongoDB</li>
+                <li class='stack-item'>Mongoose</li>
+                <li class='stack-item'>Bcrypt</li>
+                <li class='stack-item'>JSON Web Tokens</li>
+                <li class='stack-item'>Passport.js</li>
+                <li class='stack-item'>Mocha/Chai</li>
+                <li class='stack-item'>Continuous Deployment (Heroku)</li>
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+
+
+      <hr class='project-break'>
+
+
 
       <div class='project-container word-search-generator'>
         <h3>Word-Search Generator</h3>
@@ -99,7 +165,6 @@
         </ul>
 
         <img class='screenshot word-search-generator' src='./images/word-search-screenshot.png' alt='screen shot of Word Search Generator'/>
-        <!-- <div class='content-container'> -->
           <p class='project-content description'><span class='project-content-title'>Description:</span> This app allows users to input a list of 
             words and dimensions, and it will generate a word search from them.  Because there is no user authentication, all word searches are public, 
             and users can see word searches that were created by other users.
@@ -133,7 +198,6 @@
 
           </ul>
 
-        <!-- </div> -->
       </div>
 
 
@@ -200,54 +264,6 @@
                 <li class='stack-item'>JSON Web Tokens</li>
                 <li class='stack-item'>Mocha/Chai</li>
                 <li class='stack-item'>Continuous Integration (Travis-CI)</li>
-                <li class='stack-item'>Continuous Deployment (Heroku)</li>
-              </ul>
-            </li>
-
-          </ul>
-
-        </div>
-      </div>
-        
-
-
-      <hr class='project-break'>
-
-
-
-      <div class='project-container'>
-        <h3>Bookmark App</h3>
-        <ul class='project-links'>        
-          <li><a href='https://github.com/MorganHuegel/bookmark-app' target='_blank'>GitHub repo</a></li>
-          <li><a href='https://morgan-huegel-bookmarks.herokuapp.com/' target='_blank'>Live App</a></li>
-        </ul>
-
-        <img class='screenshot bookmark-app' src='./images/bookmark-app-screenshot.png' alt='screen shot of Bookmark App'/>
-        <div>
-          <p class='project-content description'><span class='project-content-title'>Description:</span> This app was built
-            to manage url bookmarks.  The bookmarks can be stored with a description and rating, and the bookmark list can 
-            be filtered by rating.  As of now, there is no user authentication, so all bookmarks will be displayed publicly.
-            This was my first full-stack project, so it is very simple but usable.
-          </p>
-
-          <ul class='tech-stack'>
-            <li class='front-end'>
-              <span class='tech-stack-header'>Front-End:</span>
-              <ul>
-                <li class='stack-item'>HTML5</li>
-                <li class='stack-item'>CSS3</li>
-                <li class='stack-item'>J-Query</li>
-                <li class='stack-item'>Responsive Design</li>
-              </ul>
-            </li>
-
-            <li class='back-end'>
-              <span class='tech-stack-header'>Back-End:</span>
-              <ul>
-                <li class='stack-item'>Node.js</li>
-                <li class='stack-item'>Express</li>
-                <li class='stack-item'>SQL Database</li>
-                <li class='stack-item'>Knex</li>
                 <li class='stack-item'>Continuous Deployment (Heroku)</li>
               </ul>
             </li>
