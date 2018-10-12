@@ -363,6 +363,12 @@ h2, h3 {
     float: right;
     margin: 10px 15px 0 0;
   }
+
+  .screenshot.word-search-generator, .screenshot.goodtimes {
+    float: left;
+    margin: 10px 15px 0 0;
+  }
+
   .screenshot.word-search-generator {
     display: inline-block;
   }
