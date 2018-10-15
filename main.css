@@ -7,7 +7,6 @@ body * {
 
 body {
   margin: 0px;
-  background-color: rgb(60, 60, 60);
 }
 
 body a:hover, body a:focus, body input:hover, body input:focus {
@@ -250,21 +249,26 @@ h2, h3 {
 }
 
 .project-container {
-  margin-bottom: 30px;
+  max-width: 1000px;
   padding: 20px;
+  margin: 0 auto 30px auto;
 }
 
 
-.project-container.goodtimes {
+.project-background {
+  width: 100vw;
+  padding: 15px 0;
+}
+.project-background.goodtimes {
   background: linear-gradient(white 1%, rgba(87,93,152, 0.5) 33%, rgba(87,93,152, 0.5) 66%, white 100%);
 }
-.project-container.atlas {
+.project-background.atlas {
   background: linear-gradient(white 1%, rgba(255, 155, 88, 0.9) 33%, rgba(255, 155, 88, 0.9) 66%, white 100%);
 }
-.project-container.word-search-generator {
+.project-background.word-search-generator {
   background: linear-gradient(white 1%, rgb(180, 240, 180) 33%, rgb(180, 240, 180) 66%, white 99%);
 }
-.project-container.endurance-data {
+.project-background.endurance-data {
   background: linear-gradient(white 1%, rgba(254, 121, 64, 0.8) 33%, rgba(254, 121, 64, 0.8) 66%, white 100%);
 }
 
@@ -383,6 +387,10 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1000px){
+  .project-background {
+    position: relative;
+    right: calc((100vw - 1000px) / 2 );
+  }
   .screenshot.endurancedata, .screenshot.atlas {
     float: right;
     margin: 10px 0 0 15px;
