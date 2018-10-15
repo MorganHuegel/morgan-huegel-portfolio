@@ -50,39 +50,40 @@ header {
 }
 
 .header-container {
-  max-width: 760px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-header img {
-  height: 19vw;
-  max-height: 80px;
-  float: left;
-  margin-right: 30px;
-}
-
 h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   font-family: sans-serif;
 }
 header span {
   display: inline-block;
+  width: 40vw;
+  max-width: 50%;
 }
 
-@media only screen and (min-width: 450px){
+header .align-left {
+  text-align: left;
+  margin-right: calc(100vw - 28px - 80vw);
+}
+header .align-right {
+  text-align: right;
+}
+
+@media only screen and (min-width: 450px) {
   h1 {
-    font-size: 36px;
+    font-size: 27px;
   }
-  header {
-    height: 102px;
+  header .align-right, header .align-left {
+    margin: 0;
+    width: 49%;
   }
 }
 
-@media only screen and (min-width: 674px){ /* When text wraps to a single line */
-  h1 {
-    padding: 20px 0;  
-  }
-}
+
+
 
 
 /* --------------- Styling for ICON CONTACT INFO ---------------- */
