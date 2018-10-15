@@ -120,15 +120,16 @@ ul.icon-contacts li {
 /* --------------- Styling for ABOUT ME ---------------- */
 main {
   background-color: white;
-  padding: 10px;
   font-size: 5vw;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .about-me {
+  padding: 10px;
   text-align: center;
   background-image: url('./images/gears-idea-clipart.jpg');
+  margin-bottom: 70px;
 }
 
 .about-me-text {
@@ -230,8 +231,8 @@ h2, h3 {
 }
 
 .projects h2 {
+  padding: 0 0 30px 20px;
   font-size: 10vw;
-  margin-bottom: 30px;
 }
 
 .projects h3 {
@@ -246,6 +247,26 @@ h2, h3 {
 .project-links {
   margin-bottom: 15px;
 }
+
+.project-container {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+
+.project-container.goodtimes {
+  background: linear-gradient(white 1%, rgba(87,93,152, 0.5) 33%, rgba(87,93,152, 0.5) 66%, white 100%);
+}
+.project-container.atlas {
+  background: linear-gradient(white 1%, rgba(255, 155, 88, 0.9) 33%, rgba(255, 155, 88, 0.9) 66%, white 100%);
+}
+.project-container.word-search-generator {
+  background: linear-gradient(white 1%, rgb(180, 240, 180) 33%, rgb(180, 240, 180) 66%, white 99%);
+}
+.project-container.endurance-data {
+  background: linear-gradient(white 1%, rgba(254, 121, 64, 0.8) 33%, rgba(254, 121, 64, 0.8) 66%, white 100%);
+}
+
 
 .project-content {
   margin-bottom: 30px;
@@ -262,7 +283,7 @@ h2, h3 {
 .screenshot {
   max-width: 500px;
   width: 100%;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 .screenshot.word-search-generator {
   border: 1px solid rgb(240, 240, 240)
@@ -331,7 +352,6 @@ h2, h3 {
 
   .projects {
     text-align: left;
-    padding: 0 10px;
   }
   .front-end ul, .back-end ul {
     padding-left: 10px;
@@ -353,7 +373,7 @@ h2, h3 {
 
 @media only screen and (min-width: 600px){
   .project-container {
-    padding: 0 10px 0 20px;
+    padding: 20px 30px;
   }
   .projects li {
     display: inline-block;
