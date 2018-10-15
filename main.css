@@ -7,7 +7,7 @@ body * {
 
 body {
   margin: 0px;
-  background-color: black;
+  background-color: rgb(60, 60, 60);
 }
 
 body a:hover, body a:focus, body input:hover, body input:focus {
@@ -15,7 +15,7 @@ body a:hover, body a:focus, body input:hover, body input:focus {
 }
 
 body a {
-  color: rgb(100, 100, 100);
+  color: rgb(60, 60, 60)
 }
 
 hr {
@@ -46,7 +46,7 @@ header {
   color: white;
   padding: 10px;
   max-height: 150px;
-  background-color: black;
+  background-color: rgb(60, 60, 60);
 }
 
 .header-container {
@@ -250,7 +250,7 @@ h2, h3 {
 }
 
 .project-container {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding: 20px;
 }
 
@@ -413,7 +413,7 @@ footer a:hover, footer a:focus {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(60, 60, 60);
   padding: 10px;
   color: white;
   text-align: center;
@@ -434,7 +434,7 @@ footer li {
 }
 
 footer a {
-  background-color: black;
+  background-color: rgb(60, 60, 60);
   color: white;
 }
 
