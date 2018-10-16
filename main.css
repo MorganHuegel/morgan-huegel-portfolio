@@ -270,7 +270,7 @@ h2, h3 {
   margin: 0 auto 30px auto;
 }
 
-/* ----- Background and Text-Shadow Colors for each section ---- */
+/* ----- Background Colors for each section ---- */
 .project-background {
   width: 100vw;
   padding: 15px 0;
@@ -288,18 +288,6 @@ h2, h3 {
   background: linear-gradient(white 1%, rgba(254, 121, 64, 0.8) 33%, rgba(254, 121, 64, 0.8) 66%, white 100%);
 }
 
-.goodtimes h3 {
-  text-shadow: 0 0 5px rgb(87, 93, 152);
-}
-.atlas h3 {
-  text-shadow: 0 0 6px rgb(255, 155, 88);
-}
-.word-search-generator h3 {
-  text-shadow: 0 0 6px rgb(180, 240, 180);
-}
-.endurance-data h3 {
-  text-shadow: 0 0 6px rgb(254, 121, 64);
-}
 /* ----- --------------------------------- ---- */
 
 
