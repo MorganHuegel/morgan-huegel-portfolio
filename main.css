@@ -94,14 +94,13 @@ address.icon-contacts {
 }
 
 ul.icon-contacts {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
-  padding-left: 10vw;
-  padding-right: 10vw;
 }
 
 .icon {
-  width: 50px;
+  width: 13vw;
+  max-width: 50px;
   background-color: white;
 }
 
@@ -112,12 +111,12 @@ ul.icon-contacts a {
 ul.icon-contacts li {
   display: inline-block;
   text-align: center;
-  width: 32%;
+  width: 23%;
 }
 .github.icon {
   border-radius: 25px;
 } 
-.email.icon, .linkedin.icon {
+.email.icon, .linkedin.icon, .resume.icon {
   border-radius: 5px;
 }
 
