@@ -120,6 +120,22 @@ ul.icon-contacts li {
   border-radius: 5px;
 }
 
+.tooltip {
+  position: absolute;
+  top: 25px;
+  visibility: hidden;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+address a:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 /* --------------- Styling for ABOUT ME ---------------- */
