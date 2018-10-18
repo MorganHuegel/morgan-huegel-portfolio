@@ -15,7 +15,7 @@ function eventListeners(){
   //collapse more-about-moregan info
   $('.about-me').on('click', '#less-about-morgan, .unicycle-pic-width.tall', function(){
     $('.life-story').slideUp(400);
-    $('.unicycle-pic-height').css('height', '200px');
+    $('.unicycle-pic-height').css('height', '205px');
     $('.unicycle-pic-width').addClass('short').removeClass('tall');
     $('#more-about-morgan').show();
     $('label[for=more-about-morgan]').show();

@@ -166,7 +166,7 @@ main {
 
 
 .unicycle-pic-height {
-  height: 200px;
+  height: 205px;
   overflow: hidden;
 }
 
@@ -213,7 +213,7 @@ label[for='more-about-morgan'] {
 }
 
 #more-about-morgan, #less-about-morgan { /* The SHOW-MORE and SHOW-LESS buttons */
-  width:50px;
+  width: 50px;
   height: 25px;
   text-align: center;
 }
@@ -243,8 +243,16 @@ label[for='more-about-morgan'] {
 
 @media only screen and (min-width: 1000px) {
   .about-me-background {
+    padding-top: 50px;
     position: relative;
     right: calc((100vw - 1000px) / 2);
+  }
+  address.icon-contacts {
+    padding-top: 50px;
+  }
+  .unicycle-pic-height {
+    float: left;
+    margin-right: 20px;
   }
 }
 
