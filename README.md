@@ -41,7 +41,7 @@ username: *demouser*  password: *password*
 ### Endurance Data
 
 [Live App](https://endurancedata.netlify.com/)
-username: *user*  password: *password*
+username: *demouser*  password: *password*
 
 [GitHub Repo](https://github.com/MorganHuegel/endurance-data-clientside)
 
