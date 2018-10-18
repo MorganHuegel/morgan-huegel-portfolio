@@ -254,6 +254,9 @@ label[for='more-about-morgan'] {
     float: left;
     margin-right: 20px;
   }
+  .more-about-morgan-container {
+    margin-bottom: 150px;
+  }
 }
 
 
