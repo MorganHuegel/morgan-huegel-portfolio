@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Morgan Huegel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome for Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
   <!-- Sets the favicon -->
@@ -21,35 +24,6 @@
 
   </header>
 
-
-  <address class='icon-contacts'>
-    <ul class='icon-contacts'>
-      <li>
-        <a href='mailto:mhue2910@gmail.com' target='_blank'>
-          <span class='tooltip'>Email</span>
-          <img src='./images/email-icon.png' alt='Email: mhue2910@gmail.com' class='email icon'/>
-        </a>
-      </li>
-      <li>
-        <a href='https://www.linkedin.com/in/morganhuegel/' target='_blank'>
-          <span class='tooltip'>LinkedIn</span>
-          <img src='./images/linkedin-icon.svg' alt='LinkedIn Profile' class='linkedin icon'/>
-        </a>
-      </li>
-      <li>
-        <a href='https://github.com/MorganHuegel' target='_blank'>
-          <span class='tooltip'>Git Hub</span>
-          <img src='./images/github-icon.svg' alt='Git hub profile' class='github icon'/>
-        </a>
-      </li>
-      <li>
-        <a href='./images/resume.pdf' target='_blank'>
-          <span class='tooltip'>Resume</span>
-          <img src='./images/resume-icon.png' alt='Resume' class='resume icon'/>
-        </a>
-      </li>
-    </ul>
-  </address>
 
 
   <main>
@@ -375,18 +349,45 @@
 
 
   <footer class='contact-info' id='contact-info'>
-    <div class='footer-info'>
-      <h2>Connect</h2>
-      <p>Reach out to me via any of these methods. I look forward to hearing from you!</p>
-      <address>
-        <ul>
-          <li>Email: <a href='mailto:mhue2910@gmail.com'>mhue2910@gmail.com</a></li>
-          <li>Phone: 814-673-0233</li>
-          <li><a href='https://www.linkedin.com/in/morganhuegel/' target='_blank'>LinkedIn</a></li>
-          <li><a href='https://github.com/MorganHuegel' target='_blank'>GitHub</a></li>
+    <h2>Connect</h2>
+    <p>I look forward to hearing from you!</p>
+    <address>
+      <ul class='icon-contacts'>
+          <li>
+            <a href='mailto:mhue2910@gmail.com' target='_blank'>
+              <span class='tooltip email'>Email</span>
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://www.linkedin.com/in/morganhuegel/' target='_blank'>
+              <span class='tooltip linkedin'>LinkedIn</span>
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://github.com/MorganHuegel' target='_blank'>
+              <span class='tooltip github'>Git Hub</span>
+              <i class="fab fa-github 3x"></i>
+            </a>
+          </li>
+          <li>
+            <a href='./images/resume.pdf' target='_blank'>
+              <span class='tooltip resume'>Resume</span>
+              <i class="far fa-address-book"></i>
+            </a>
+          </li>
+          <li class='phone-icon'>
+            <a href='#contact-info' >
+              <span class='tooltip phone'>814-673-0233</span>
+              <i class="fas fa-phone"></i>
+            </a>
+          </li>
+          <li class='phone-paragraph'>
+            <p> <i class="fas fa-phone"></i> 814-673-0233</p>
+          </li>
         </ul>
-      </address>
-    </div>
+    </address>
   </footer>
   
   <script src="jquery-3.3.1.js"></script>
