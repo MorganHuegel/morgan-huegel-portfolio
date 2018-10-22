@@ -189,7 +189,7 @@ p.life-story {
   background: linear-gradient(white 1%, rgba(255, 155, 88, 0.9) 33%, rgba(255, 155, 88, 0.9) 66%, white 100%);
 }
 .project-background.word-search-generator {
-  background: linear-gradient(white 1%, rgb(180, 240, 180) 33%, rgb(180, 240, 180) 66%, white 99%);
+  background: linear-gradient(white 1%, rgb(225, 225, 100) 33%, rgb(225, 225, 100) 66%, white 99%);
 }
 .project-background.endurance-data {
   background: linear-gradient(white 1%, rgba(254, 121, 64, 0.8) 33%, rgba(254, 121, 64, 0.8) 66%, white 100%);
