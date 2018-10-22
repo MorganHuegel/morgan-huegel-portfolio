@@ -174,25 +174,28 @@ p.life-story {
 .project-container {
   max-width: 1000px;
   padding: 20px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 0 auto;
 }
 
 /* ----- Background Colors for each section ---- */
 .project-background {
   width: 100vw;
-  padding: 15px 0;
+  padding: 30px 0 0 0;
+  margin-bottom: -1px;
 }
+
 .project-background.goodtimes {
-  background: linear-gradient(white 1%, rgba(87,93,152, 0.5) 33%, rgba(87,93,152, 0.5) 66%, white 100%);
+  margin: 0;
+  background: linear-gradient(white, rgba(87, 93, 152, 0.5) 20px);
 }
 .project-background.atlas {
-  background: linear-gradient(white 1%, rgba(255, 155, 88, 0.9) 33%, rgba(255, 155, 88, 0.9) 66%, white 100%);
+  background: linear-gradient(rgba(87, 93, 152, 0.5), rgba(255, 155, 88, 0.9) 20px);
 }
 .project-background.word-search-generator {
-  background: linear-gradient(white 1%, rgb(180, 240, 180) 33%, rgb(180, 240, 180) 66%, white 99%);
+  background: linear-gradient(rgba(255, 155, 88, 0.9), rgb(225, 225, 100) 20px);
 }
 .project-background.endurance-data {
-  background: linear-gradient(white 1%, rgba(254, 121, 64, 0.8) 33%, rgba(254, 121, 64, 0.8) 66%, white 100%);
+  background: linear-gradient(rgb(225, 225, 100), rgba(254, 121, 64, 0.8) 20px);
 }
 
 /* ----- --------------------------------- ---- */
@@ -213,9 +216,10 @@ span.project-content-title {
 }
 
 .screenshot {
+  display: block;
   max-width: 600px;
   width: 100%;
-  margin: 0;
+  margin: 0 auto 20px auto;
 }
 .screenshot.word-search-generator {
   border: 1px solid rgb(240, 240, 240)
@@ -256,13 +260,6 @@ span.project-content-title {
   padding-left: 10px;
 }
 
-@media only screen and (min-width: 400px){
-  .screenshot {
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-}
-
 @media only screen and (min-width: 622px){
   .project-links li {
     display: inline-block;
@@ -271,6 +268,10 @@ span.project-content-title {
 }
 
 @media only screen and (min-width: 1000px){
+  .projects h2 {
+    margin-bottom: 100px;
+    margin-top: 140px;
+  }
   .project-links {
     margin-bottom: 0;
   }
@@ -325,7 +326,6 @@ footer {
   padding: 50px 10px 50px 10px;
   color: white;
   text-align: center;
-  margin-top: 40px;
 }
 
 footer p {
