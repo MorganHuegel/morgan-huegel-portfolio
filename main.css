@@ -3,7 +3,7 @@ html {
 }
 
 body * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.5rem;
   padding: 0;
   margin: 0;
@@ -13,11 +13,6 @@ body * {
 
 body {
   margin: 0px;
-}
-
-
-body a:hover, body a:focus, body input:hover, body input:focus {
-  background-color: rgb(230, 230, 230);
 }
 
 body a {
@@ -54,11 +49,11 @@ h1 {
 }
 header span {
   display: inline-block;
-  max-width: 200px;
+  max-width: 179px;
 }
 
 header .align-left {
-  width: 48%;
+  width: 49%;
   text-align: left;
 }
 header .align-right {
@@ -66,10 +61,16 @@ header .align-right {
   text-align: right;
 }
 
+@media only screen and (min-width: 390px) {
+  header .align-left {
+    margin-right: calc(100vw - 390px)
+  }
+}
+
 @media only screen and (min-width: 450px) {
   header .align-right, header .align-left {
-    width: 49%;
     max-width: none;
+    margin: 0;
   }
 }
 
@@ -98,39 +99,20 @@ main {
   margin: 0 auto 150px auto;
 }
 
-.about-me-text {
-  margin-top: 10px;
-  text-shadow: 1px 0 4px white;
+.about-me .image-container {
+  text-align: center;
+  height: 300px;
+  margin-bottom: 15px;
 }
 
-
-
-.unicycle-pic-height {
-  height: 205px;
-  overflow: hidden;
-}
-
-.unicycle-pic-width {
+.about-me img {
+  width: 250px;
+  height: 300px;
   border: 1px solid black;
-  padding: 5px;
-  background-image: url('./images/unicycle edited.jpeg');
-  background-clip: content-box;
-  background-position: center top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 90vw;
-  max-width: 300px;
-  margin: 0 auto;
 }
 
-.unicycle-pic-width:hover {
-  cursor: pointer;
-}
-
-
-.life-story {
-  display: none;
+.about-me a:hover, .about-me a:focus {
+  background-color: rgb(240, 240, 240);
 }
 
 p.life-story {
@@ -141,32 +123,6 @@ p.life-story {
   font-style: italic;
 }
 
-label {
-  display: block;
-  font-style: italic;
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-label[for='more-about-morgan'] {
-  margin-top: 10px;
-}
-
-#more-about-morgan, #less-about-morgan { /* The SHOW-MORE and SHOW-LESS buttons */
-  width: 50px;
-  height: 25px;
-  text-align: center;
-}
-
-.more-about-morgan-container, .less-about-morgan-container {
-  text-align: center;
-}
-
-
-#less-about-morgan {
-  margin-top: 10px;
-}
-
 @media only screen and (min-width: 400px){
   .about-me-text {
     text-align: left;
@@ -175,19 +131,20 @@ label[for='more-about-morgan'] {
 }
 
 @media only screen and (min-width: 1000px) {
+  .about-me .image-container {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-right: 20px;
+  }
+  .about-me-text {
+    display: inline-block;
+    width: calc(100% - 275px);
+  }
   .about-me-background {
     position: relative;
     right: calc((100vw - 1000px) / 2);
-  }
-  address.icon-contacts {
-    padding-top: 50px;
-  }
-  .unicycle-pic-height {
-    float: left;
-    margin-right: 20px;
-  }
-  .more-about-morgan-container {
-    margin-bottom: 150px;
   }
 }
 
@@ -374,6 +331,10 @@ footer h2 {
 }
 
 footer {
+  font-weight: normal;
+}
+
+footer {
   position: relative;
   background-color: rgb(60, 60, 60);
   padding: 50px 10px 50px 10px;
@@ -409,6 +370,7 @@ ul.icon-contacts li {
 }
 
 .tooltip {
+  font-size: 0.85rem;
   position: absolute;
   visibility: hidden;
   background-color: white;
@@ -434,9 +396,13 @@ address a:hover .tooltip, address a:focus .tooltip {
   display: none;
 }
 
+li.phone-icon a:hover {
+  cursor: default;
+}
+
 .icon-contacts li.phone-paragraph {
   width: 100%;
-  padding-right: calc(100vw - 130px - 49%);
+  padding-right: calc(100vw - 154px - 49%);
 }
 
 
@@ -460,18 +426,18 @@ address a:hover .tooltip, address a:focus .tooltip {
   }
   
   .tooltip.email {
-    left: calc((100vw - 600px) / 2 + 40px);
+    left: calc((100vw - 600px) / 2 + 39px);
   }
   .tooltip.linkedin {
     right: inherit;
-    left: calc((100vw - 600px) / 2 + 148px)
+    left: calc((100vw - 600px) / 2 + 144px)
   }
   .tooltip.github {
-    left: calc((100vw - 600px) / 2 + 269px)
+    left: calc((100vw - 600px) / 2 + 266px)
   }
   .tooltip.resume {
     right: inherit;
-    left: calc((100vw - 600px) / 2 + 388px)
+    left: calc((100vw - 600px) / 2 + 382px)
   }
   .tooltip.phone {
     display: inherit;
