@@ -88,14 +88,13 @@ main {
 
 .about-me-background {
   padding-top: 20px;
-  background: linear-gradient(rgb(60, 60, 60), white 8px);
+  background: linear-gradient(rgb(60, 60, 60), white 3px);
   width: 100vw;
 }
 
 .about-me {
   max-width: 1000px;
   padding: 10px;
-  text-align: center;
   margin: 0 auto 150px auto;
 }
 
@@ -125,7 +124,6 @@ p.life-story {
 
 @media only screen and (min-width: 400px){
   .about-me-text {
-    text-align: left;
     padding: 0 10px;
   }
 }
@@ -153,11 +151,9 @@ p.life-story {
 
 
 /* ---------- Styling for Projects Section ------------ */
-.projects {
-  text-align: center;
-}
-
 .projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
   padding: 10px 20px;
   font-size: 2.2rem;
 }
@@ -204,54 +200,38 @@ p.life-story {
 
 .project-content {
   margin-bottom: 30px;
-}
-.project-content.dummy-credentials {
-  margin: -20px auto 30px auto;
-  max-width: 705px;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 .project-content-title {
   font-style: italic;
+  font-weight: bold;
+}
+span.project-content-title {
+  margin-right: 2px;
 }
 
 .screenshot {
   max-width: 500px;
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 .screenshot.word-search-generator {
   border: 1px solid rgb(240, 240, 240)
 }
-.dummy-login {
-  text-align: center;
-  display: inline-block;
-  width: 49%;
-}
-.dummy-user {
-  font-style: italic;
-}
-.sidenote {
-  display: block;
-  font-style: italic;
-  font-size: 0.8rem;
-  margin: 10px 0;
-  text-align: center;
-}
-
-
-
 
 .front-end, .back-end {
   font-size: 0.8rem;
   display: inline-block;
   width: 47%;
-  padding: 0 10px 10px 20px;
+  padding: 0 10px 10px 10px;
   vertical-align: top;
   margin-top: 10px;
 }
 
-.front-end {
-  border-right: 1px solid gray;
+.back-end {
+  border-left: 1px solid gray;
 }
 
 .projects .tech-stack {
@@ -267,22 +247,19 @@ p.life-story {
 }
 
 .tech-stack-header {
-  text-decoration: underline;
   display: block;
   font-style: italic;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.front-end ul, .back-end ul {
+  padding-left: 10px;
 }
 
 @media only screen and (min-width: 400px){
   .screenshot {
     display: block;
     margin: 0 auto 20px auto;
-  }
-
-  .projects {
-    text-align: left;
-  }
-  .front-end ul, .back-end ul {
-    padding-left: 10px;
   }
 }
 
@@ -294,31 +271,31 @@ p.life-story {
 }
 
 @media only screen and (min-width: 1000px){
+  .project-links {
+    margin-bottom: 0;
+  }
+  .project-content {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .description-container h4 {
+    display: none;
+  }
   .screenshot {
-    display: inherit;
+    display: inline-block;
+    width: 500px;
+    max-width: none;
+    height: 300px;
+    margin: 7px 10px 10px 0;
+  }
+  .description-container {
+    display: inline-block;
+    width: 440px;
+    vertical-align: top;
   }
   .project-background {
     position: relative;
     right: calc((100vw - 1000px) / 2 );
-  }
-  .screenshot.endurancedata, .screenshot.atlas {
-    float: right;
-    margin: 10px 0 0 15px;
-  }
-
-  .screenshot.goodtimes {
-    float: left;
-    margin: 10px 15px 0 0;
-  }
-
-  .screenshot.word-search-generator {
-    display: inline-block;
-  }
-  .word-search-generator .project-content.description {
-    display: inline-block;
-    width: 380px;
-    vertical-align: top;
-    margin-left: 10px;
   }
 }
 
@@ -345,7 +322,7 @@ footer {
 
 footer p {
   font-style: italic;
-  margin: 10px 0 20px 0;
+  margin: 30px 0 30px 0;
 }
 
 footer a:hover, footer a:focus {
@@ -402,7 +379,7 @@ li.phone-icon a:hover {
 
 .icon-contacts li.phone-paragraph {
   width: 100%;
-  padding-right: calc(100vw - 154px - 49%);
+  padding-right: calc(100vw - 160px - 49%);
 }
 
 
