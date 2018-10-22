@@ -213,7 +213,7 @@ span.project-content-title {
 }
 
 .screenshot {
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
   margin: 0;
 }
@@ -283,19 +283,27 @@ span.project-content-title {
   }
   .screenshot {
     display: inline-block;
-    width: 500px;
+    width: 600px;
     max-width: none;
-    height: 300px;
+    height: 405.2px;
     margin: 7px 10px 10px 0;
   }
   .description-container {
     display: inline-block;
-    width: 440px;
+    width: 340px;
     vertical-align: top;
   }
   .project-background {
     position: relative;
     right: calc((100vw - 1000px) / 2 );
+  }
+  .description-container.endurancedata, .description-container.atlas {
+    position: relative;
+    right: 624px;
+  }
+  .screenshot.endurancedata, .screenshot.atlas {
+    position: relative;
+    left: 360px;
   }
 }
 
