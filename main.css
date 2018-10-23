@@ -98,16 +98,29 @@ main {
   margin: 0 auto 150px auto;
 }
 
+.about-me .image-shadow {
+  display: inline-block;
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  background: radial-gradient(rgb(150, 150, 150), white);
+}
+
 .about-me .image-container {
+  position: relative;
   text-align: center;
-  height: 300px;
+  height: 200px;
   margin-bottom: 15px;
 }
 
 .about-me img {
-  width: 250px;
-  height: 300px;
-  border: 1px solid black;
+  position: absolute;
+  right: calc(50% - 99px);
+  bottom: 2px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 50%;
 }
 
 .about-me a:hover, .about-me a:focus {
@@ -128,17 +141,19 @@ p.life-story {
   }
 }
 
+
 @media only screen and (min-width: 1000px) {
   .about-me .image-container {
     display: inline-block;
-    width: 250px;
+    width: 200px;
     vertical-align: top;
     margin-top: 7px;
     margin-right: 20px;
   }
   .about-me-text {
+    padding: 0;
     display: inline-block;
-    width: calc(100% - 275px);
+    width: calc(100% - 225px);
   }
   .about-me-background {
     position: relative;
