@@ -77,7 +77,11 @@ function eventListeners(){
     if (e.target.closest('span').classList.contains('right')) app.counter = (app.counter + 1) % app.sources.length;
     else if (app.counter === 0) app.counter = app.sources.length - 1;
     else app.counter = app.counter - 1;
-    $(image).attr('src', app.sources[app.counter]);
+    $(image).fadeOut(100, () => {
+      $(image).attr('src', app.sources[app.counter]);
+    });
+    $(image).fadeIn(100);
+
     if ($(image).attr('src').includes('mobile')) {
       $(image).addClass('mobile');
     } else {
