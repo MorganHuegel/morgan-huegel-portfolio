@@ -519,8 +519,9 @@ li.phone-icon a:hover {
 
 }
 
-
-
+.preload-photos {
+  display: none;
+}
 
 
 
