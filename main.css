@@ -235,7 +235,7 @@ span.project-content-title {
   display: block;
   max-width: 600px;
   width: 100%;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 25px auto;
   background-color: black;
   height: calc( (100vw - 40px) * 0.675);
   max-height: 405px;
@@ -255,6 +255,19 @@ span.project-content-title {
 .screenshot.word-search-generator {
   border: 1px solid rgb(240, 240, 240)
 }
+.screenshot-container .screenshot-bubbles {
+  position: absolute;
+  bottom: -20px;
+}
+.screenshot-container .bubble {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 10px;
+}
+
 
 
 .arrow {
@@ -357,7 +370,7 @@ span.project-content-title {
     width: 600px;
     max-width: none;
     height: 405.3px;
-    margin: 7px 10px 10px 0;
+    margin: 7px 10px 20px 0;
   }
   .description-container {
     display: inline-block;
