@@ -230,14 +230,56 @@ span.project-content-title {
   margin-right: 2px;
 }
 
-.screenshot {
+.screenshot-container {
+  position: relative;
   display: block;
   max-width: 600px;
   width: 100%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 15px auto;
+  background-color: black;
+  height: calc( (100vw - 40px) * 0.675);
+  max-height: 405px;
 }
+.screenshot {
+  width: 100%;
+  height: 100%;
+}
+/* .screenshot.mobile {
+  height: calc(100%);
+  max-height: 405.2px;
+  width: initial;
+  margin: 0 auto;
+} */
 .screenshot.word-search-generator {
   border: 1px solid rgb(240, 240, 240)
+}
+.arrow {
+  display: inline-block;
+  width: 37px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+}
+.arrow i {
+  font-size: 26px;
+}
+
+.arrow.left {
+  top: calc(50% - 30px);
+  
+}
+.arrow.right {
+  top: calc(50% - 30px);
+  left: calc(100% - 37px)
+}
+.arrow:hover, .arrow:focus {
+  color: rgb(230, 230, 230);
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .front-end, .back-end {
@@ -297,11 +339,11 @@ span.project-content-title {
   .description-container h4 {
     display: none;
   }
-  .screenshot {
+  .screenshot-container {
     display: inline-block;
     width: 600px;
     max-width: none;
-    height: 405.2px;
+    height: 405.3px;
     margin: 7px 10px 10px 0;
   }
   .description-container {
@@ -317,7 +359,7 @@ span.project-content-title {
     position: relative;
     right: 624px;
   }
-  .screenshot.endurancedata, .screenshot.atlas {
+  .screenshot-container.endurancedata, .screenshot-container.atlas {
     position: relative;
     left: 360px;
   }
