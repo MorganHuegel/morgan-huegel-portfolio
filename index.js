@@ -95,10 +95,15 @@ function switchScreenshot(e, right) {
 
 
 
-
 function eventListeners(){
   $('.screenshot-container').on('click', '.arrow.right', (e) => switchScreenshot(e, true));
   $('.screenshot-container').on('click', '.arrow.left', (e) => switchScreenshot(e, false));
+  // $('.screenshot-container').on('mouseenter', e => {
+  //   console.log(e.target);
+  // });
+  // $('.screenshot-container').on('mouseleave', e => {
+  //   console.log(e.target);
+  // });
 }
 
 

@@ -283,6 +283,8 @@ span.project-content-title {
   border-radius: 50%;
   text-align: center;
   position: absolute;
+  margin: 0;
+  border: none;
 }
 .arrow i {
   font-size: 26px;
@@ -297,7 +299,7 @@ span.project-content-title {
   left: calc(100% - 37px)
 }
 .arrow:hover, .arrow:focus {
-  color: rgb(230, 230, 230);
+  outline: none;
   background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
