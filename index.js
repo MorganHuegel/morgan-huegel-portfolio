@@ -79,14 +79,15 @@ function eventListeners(){
     else app.counter = app.counter - 1;
     $(image).fadeOut(100, () => {
       $(image).attr('src', app.sources[app.counter]);
+      if ($(image).attr('src').includes('mobile')) {
+        $(image).addClass('mobile');
+      } else {
+        $(image).removeClass('mobile');
+      }
     });
     $(image).fadeIn(100);
 
-    if ($(image).attr('src').includes('mobile')) {
-      $(image).addClass('mobile');
-    } else {
-      $(image).removeClass('mobile');
-    }
+    
   });
 }
 

@@ -244,15 +244,19 @@ span.project-content-title {
   width: 100%;
   height: 100%;
 }
-/* .screenshot.mobile {
-  height: calc(100%);
-  max-height: 405.2px;
+.screenshot.mobile {
   width: initial;
-  margin: 0 auto;
-} */
+  margin-left: calc(50% - (1 / 2 * 0.484 * calc( (100vw - 40px) * 0.675)));
+  border-radius: 5%;
+}
+.screenshot.mobile.goodtimes {
+  margin-left: calc(50% - (1 / 2 * 0.484 * calc( (100vw - 40px) * 0.675)));
+}
 .screenshot.word-search-generator {
   border: 1px solid rgb(240, 240, 240)
 }
+
+
 .arrow {
   display: inline-block;
   width: 37px;
@@ -321,6 +325,15 @@ span.project-content-title {
   .project-links li {
     display: inline-block;
     margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .screenshot.mobile {
+    margin-left: calc(50% - 98px);
+  }
+  .screenshot.mobile.goodtimes {
+    margin-left: calc(50% - 110px);
   }
 }
 
