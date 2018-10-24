@@ -73,9 +73,14 @@ function switchScreenshot(e, right) {
       break;
   }
 
+  let spanList = $(image).parent().find('.screenshot-bubbles').children();
+  $(spanList[app.counter]).css('background-color', 'gray');
+
   if (right) app.counter = (app.counter + 1) % app.sources.length;
   else if (app.counter === 0) app.counter = app.sources.length - 1;
   else app.counter = app.counter - 1;
+
+  $(spanList[app.counter]).css('background-color', 'white');
 
   $(image).fadeOut(100, () => {
     $(image).attr('src', app.sources[app.counter]);

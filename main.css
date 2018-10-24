@@ -247,7 +247,7 @@ span.project-content-title {
 .screenshot.mobile {
   width: initial;
   margin-left: calc(50% - (1 / 2 * 0.484 * calc( (100vw - 40px) * 0.675)));
-  border-radius: 5%;
+  border-radius: 10%;
 }
 .screenshot.mobile.goodtimes {
   margin-left: calc(50% - (1 / 2 * 0.484 * calc( (100vw - 40px) * 0.675)));
@@ -264,8 +264,11 @@ span.project-content-title {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: black;
+  background-color: gray;
   margin-right: 10px;
+}
+.screenshot-container .screenshot-bubbles > :first-child {
+  background-color: white;
 }
 
 
