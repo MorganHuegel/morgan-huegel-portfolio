@@ -98,7 +98,7 @@ function switchScreenshot(e, right) {
     } else {
       $(newImage).removeClass('mobile');
     }
-    $(newImage).fadeIn(200, () => {
+    $(newImage).fadeIn(300, () => {
       $(container).on('click', '.arrow.right', e => switchScreenshot(e, true));
       $(container).on('click', '.arrow.left', e => switchScreenshot(e, false));
     });

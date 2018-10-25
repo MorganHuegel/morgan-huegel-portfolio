@@ -519,8 +519,14 @@ li.phone-icon a:hover {
 
 }
 
+
+
+
+/* ----------------- PRELOADING SCREENSHOTS FOR CAROUSEL ----------------- */
 .preload-photos {
-  display: none;
+  position: fixed;
+  top: 10000px;
+  right: 10000px;
 }
 
 
