@@ -2,6 +2,7 @@
 'use strict';
 
 let goodtimes = {
+  className: 'goodtimes',
   counter: 0,
   sources: [
     './images/goodtimes/goodtimes-screenshot-main.png',
@@ -17,6 +18,7 @@ let goodtimes = {
 };
 
 let atlas = {
+  className: 'atlas',
   counter: 0,
   sources: [
     './images/atlas/atlas-screenshot-main.png',
@@ -30,6 +32,7 @@ let atlas = {
 };
 
 let wordSearch = {
+  className: 'word-search-generator',
   counter: 0,
   sources: [
     './images/word-search/word-search-screenshot-main.png',
@@ -42,6 +45,7 @@ let wordSearch = {
 };
 
 let enduranceData = {
+  className: 'endurancedata',
   counter: 0,
   sources: [
     './images/endurance-data/endurance-data-screenshot-main.png',
@@ -55,7 +59,9 @@ let enduranceData = {
 };
 
 
+
 function switchScreenshot(e, right) {
+  const container = $(e.target.closest('div'));
   const image = $(e.target.closest('div')).find('img')[0];
   let app;
   switch (true) {
@@ -82,16 +88,19 @@ function switchScreenshot(e, right) {
 
   $(spanList[app.counter]).css('background-color', 'white');
 
-  $(image).fadeOut(100, () => {
-    $(image).attr('src', app.sources[app.counter]);
-    if ($(image).attr('src').includes('mobile')) {
-      $(image).addClass('mobile');
+  let newImage;
+  $(image).fadeOut(200, () => {
+    $(image).replaceWith(`<img class='screenshot ${app.className}' src='${app.sources[app.counter]}' alt='screen shot of ${app.className} App' style='display:none'/>`);
+    newImage = $(container).find('img');
+    if ($(newImage).attr('src').includes('mobile')) {
+      $(newImage).addClass('mobile');
     } else {
-      $(image).removeClass('mobile');
+      $(newImage).removeClass('mobile');
     }
+    $(newImage).fadeIn(200);
   });
-  $(image).fadeIn(100);
 }
+
 
 
 
@@ -105,6 +114,7 @@ function eventListeners(){
   //   console.log(e.target);
   // });
 }
+
 
 
 function screenshotBubbles() {
