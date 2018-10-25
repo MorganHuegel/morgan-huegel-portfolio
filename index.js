@@ -62,6 +62,7 @@ let enduranceData = {
 
 function switchScreenshot(e, right) {
   const container = $(e.target.closest('div'));
+  $(container).off();
   const image = $(e.target.closest('div')).find('img')[0];
   let app;
   switch (true) {
@@ -97,7 +98,10 @@ function switchScreenshot(e, right) {
     } else {
       $(newImage).removeClass('mobile');
     }
-    $(newImage).fadeIn(200);
+    $(newImage).fadeIn(200, () => {
+      $(container).on('click', '.arrow.right', e => switchScreenshot(e, true));
+      $(container).on('click', '.arrow.left', e => switchScreenshot(e, false));
+    });
   });
 }
 
