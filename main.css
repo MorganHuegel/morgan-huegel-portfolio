@@ -361,7 +361,7 @@ span.project-content-title {
 @media only screen and (min-width: 1000px){
   .projects h2 {
     margin-bottom: 60px;
-    margin-top: 60px;
+    margin-top: 50px;
   }
   .project-links {
     margin-bottom: 0;
