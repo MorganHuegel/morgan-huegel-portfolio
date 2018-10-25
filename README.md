@@ -2,7 +2,8 @@
 
 www.morganhuegel.com
 
-![Picture of Morgan](https://github.com/MorganHuegel/morgan-huegel-portfolio/blob/master/images/unicycle%20edited.jpeg?raw=true)
+<img src='https://github.com/MorganHuegel/morgan-huegel-portfolio/blob/master/images/morgan-image.jpg?raw=true' width='200' alt='Picture of Morgan'/>
+
 
 ## Technologies Used
 
@@ -18,7 +19,6 @@ www.morganhuegel.com
 ### Goodtimes
 
 [Live App](https://goodtimes-client.herokuapp.com/)
-username: *demouser*  password: *password12*
 
 [GitHub Repo](https://github.com/thinkful-ei22/its_a_date_client)
 
@@ -26,7 +26,6 @@ username: *demouser*  password: *password12*
 ### Atlas
 
 [Live App](https://countries-client.herokuapp.com/)
-username: *demouser*  password: *password*
 
 [GitHub Repo](https://github.com/thinkful-ei22/morgan-cecille-spaced-rep-client)
 
@@ -41,7 +40,6 @@ username: *demouser*  password: *password*
 ### Endurance Data
 
 [Live App](https://endurancedata.netlify.com/)
-username: *demouser*  password: *password*
 
 [GitHub Repo](https://github.com/MorganHuegel/endurance-data-clientside)
 
