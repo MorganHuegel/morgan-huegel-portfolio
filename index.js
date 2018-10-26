@@ -81,13 +81,13 @@ function switchScreenshot(e, right) {
   }
 
   let spanList = $(image).parent().find('.screenshot-bubbles').children();
-  $(spanList[app.counter]).css('background-color', 'gray');
+  $(spanList[app.counter]).removeClass('selected-bubble');
 
   if (right) app.counter = (app.counter + 1) % app.sources.length;
   else if (app.counter === 0) app.counter = app.sources.length - 1;
   else app.counter = app.counter - 1;
 
-  $(spanList[app.counter]).css('background-color', 'white');
+  $(spanList[app.counter]).addClass('selected-bubble');
 
   let newImage;
   $(image).fadeOut(200, () => {
@@ -123,22 +123,26 @@ function eventListeners(){
 
 function screenshotBubbles() {
   goodtimes.sources.forEach( (source, index) => {
-    $('.screenshot-bubbles.goodtimes').append(`<span class='bubble ${index}'></span>`);
+    const selected = index === 0 ? 'selected-bubble' : '';
+    $('.screenshot-bubbles.goodtimes').append(`<span class='bubble ${selected} ${index}'></span>`);
   });
   $('.screenshot-bubbles.goodtimes').css('left', `calc(50% - (15px * ${goodtimes.sources.length}) / 2)`);
 
   atlas.sources.forEach( (source, index) => {
-    $('.screenshot-bubbles.atlas').append(`<span class='bubble ${index}'></span>`);
+    const selected = index === 0 ? 'selected-bubble' : '';
+    $('.screenshot-bubbles.atlas').append(`<span class='bubble ${selected} ${index}'></span>`);
   });
   $('.screenshot-bubbles.atlas').css('left', `calc(50% - (15px * ${atlas.sources.length}) / 2)`);
 
   wordSearch.sources.forEach( (source, index) => {
-    $('.screenshot-bubbles.word-search-generator').append(`<span class='bubble ${index}'></span>`);
+    const selected = index === 0 ? 'selected-bubble' : '';
+    $('.screenshot-bubbles.word-search-generator').append(`<span class='bubble ${selected} ${index}'></span>`);
   });
   $('.screenshot-bubbles.word-search-generator').css('left', `calc(50% - (15px * ${wordSearch.sources.length}) / 2)`);
 
   enduranceData.sources.forEach( (source, index) => {
-    $('.screenshot-bubbles.endurancedata').append(`<span class='bubble ${index}'></span>`);
+    const selected = index === 0 ? 'selected-bubble' : '';
+    $('.screenshot-bubbles.endurancedata').append(`<span class='bubble ${selected} ${index}'></span>`);
   });
   $('.screenshot-bubbles.endurancedata').css('left', `calc(50% - (15px * ${enduranceData.sources.length}) / 2)`);
 

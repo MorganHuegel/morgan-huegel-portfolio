@@ -204,17 +204,42 @@ p.life-story {
 
 .project-background.goodtimes {
   margin: 0;
-  background: rgba(87, 93, 152, 0.5);
+  background: rgb(87, 93, 152);
+  color: white;
 }
+.project-background.goodtimes a {
+  color: white;
+}
+.project-background.goodtimes a:hover, .project-background.goodtimes a:focus {
+  color: rgb(235, 235, 235);
+}
+
 .project-background.atlas {
-  background:  rgba(255, 155, 88, 0.9);
+  background-color: rgb(232,90,79);
+  color: rgb(235, 235, 235);
 }
+.project-background.atlas a {
+  color: rgb(235, 235, 235);
+}
+.project-background.atlas a:hover, .project-background.atlas a:focus  {
+  color: rgb(215, 215, 215);
+}
+
 .project-background.word-search-generator {
+  padding-bottom: 40px;
   background:  rgb(225, 225, 100) 20px;
 }
+
 .project-background.endurance-data {
-  background: rgba(254, 121, 64, 0.8);
+  background: rgba(254, 121, 64, 0.9);
 }
+.endurance-data a, .word-search-generator a {
+  color: black;
+}
+.endurance-data a:hover, .endurance-data a:focus, .word-search-generator a:hover, .word-search-generator a:focus {
+  color: rgb(60, 60, 60);
+}
+
 
 /* ----- --------------------------------- ---- */
 
@@ -239,9 +264,12 @@ span.project-content-title {
   max-width: 600px;
   width: 100%;
   margin: 0 auto 25px auto;
-  background-color: black;
+  background-color: rgb(60, 60, 60);
   height: calc( (100vw - 40px) * 0.675);
   max-height: 405px;
+}
+.endurance-data .screenshot-container {
+  border: 1px solid rgb(60, 60, 60);
 }
 .screenshot {
   width: 100%;
@@ -267,10 +295,11 @@ span.project-content-title {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: rgb(60, 60, 60);
   margin-right: 10px;
 }
-.screenshot-container .screenshot-bubbles > :first-child {
+
+.screenshot-container .screenshot-bubbles .selected-bubble {
   background-color: white;
 }
 
@@ -318,6 +347,12 @@ span.project-content-title {
 
 .back-end {
   border-left: 1px solid gray;
+}
+.atlas .back-end, .goodtimes .back-end {
+  border-left: 1px solid rgb(235, 235, 235);
+}
+.endurance-data .back-end {
+  border-left: 1px solid rgb(60, 60, 60);
 }
 
 .projects .tech-stack {
