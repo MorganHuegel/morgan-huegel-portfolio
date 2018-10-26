@@ -79,8 +79,6 @@ function switchScreenshot(e, right) {
       app = enduranceData;
       break;
   }
-  
-  
 
   let spanList = $(image).parent().find('.screenshot-bubbles').children();
   $(spanList[app.counter]).removeClass('selected-bubble');
@@ -113,39 +111,12 @@ function switchScreenshot(e, right) {
 function eventListeners(){
   $('.screenshot-container').on('click', '.arrow.right', (e) => switchScreenshot(e, true));
   $('.screenshot-container').on('click', '.arrow.left', (e) => switchScreenshot(e, false));
-}
-
-function preloadImages() {
-  let image = $('.screenshot.goodtimes');
-  for (let i = goodtimes.sources.length - 1; i >= 0; i--) {
-    const src = goodtimes.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot goodtimes mobile' : 'screenshot goodtimes';
-    $(image).after(`<img class='${classes}' src='${src}' alt='screenshot of ${goodtimes.className}' style='display:none'/>`);  }
-
-  image = $('.screenshot.atlas');
-  for (let i = atlas.sources.length - 1; i >= 0; i--) {
-    const src = atlas.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot atlas mobile' : 'screenshot atlas';
-    $(image).after(`<img class='${classes}' src='${src}' alt='screenshot of ${atlas.className}' style='display:none'/>`);
-  }
-
-  image = $('.screenshot.word-search-generator');
-  for (let i = wordSearch.sources.length - 1; i >= 0; i--) {
-    const src = wordSearch.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot word-search-generator mobile' : 'screenshot word-search-generator';
-    $(image).after(`<img src='${src}' class='${classes}' alt='screenshot of ${wordSearch.className}' style='display:none'/>`);
-  }
-
-  image = $('.screenshot.endurancedata');
-  for (let i = enduranceData.sources.length - 1; i >= 0; i--) {
-    const src = enduranceData.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot endurancedata mobile' : 'screenshot endurancedata';
-    $(image).after(`<img src='${src}' class='${classes}' alt='screenshot of ${enduranceData.className}' style='display:none'/>`);
-  }
+  // $('.screenshot-container').on('mouseenter', e => {
+  //   console.log(e.target);
+  // });
+  // $('.screenshot-container').on('mouseleave', e => {
+  //   console.log(e.target);
+  // });
 }
 
 
@@ -181,5 +152,4 @@ function screenshotBubbles() {
 $(() => {
   eventListeners();
   screenshotBubbles();
-  preloadImages();
 });
