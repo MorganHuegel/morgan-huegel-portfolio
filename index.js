@@ -166,14 +166,17 @@ function greeting(){
     $('.cursor').toggleClass('open');
   }, 4000);
   setTimeout(() => {
-    $('.banner, main, footer').show();
-    $('.landing-page').fadeOut(300);
+    $('body').fadeOut(600, () => {
+      $('.landing-page').hide();
+      $('.banner, main, footer').show();
+      $('body').fadeIn(300);
+    });
   }, 5000);
 }
 
 
 $(() => {
-  $('body').fadeIn(2000, () => greeting());
+  $('body').fadeIn(1500, () => greeting());
   eventListeners();
   screenshotBubbles();
 });
