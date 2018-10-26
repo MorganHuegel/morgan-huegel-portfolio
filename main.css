@@ -95,7 +95,7 @@ main {
 .about-me {
   max-width: 1000px;
   padding: 10px;
-  margin: 0 auto 150px auto;
+  margin: 0 auto 50px auto;
 }
 
 .about-me .image-shadow {
@@ -143,6 +143,9 @@ p.life-story {
 
 
 @media only screen and (min-width: 1000px) {
+  .about-me {
+    margin-bottom: 150px;
+  }
   .about-me .image-container {
     display: inline-block;
     width: 200px;
@@ -168,14 +171,14 @@ p.life-story {
 /* ---------- Styling for Projects Section ------------ */
 .projects h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 10px 20px;
   font-size: 2.2rem;
 }
 
 .projects h3 {
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .project-links li {
@@ -188,7 +191,7 @@ p.life-story {
 
 .project-container {
   max-width: 1000px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   margin: 0 auto 0 auto;
 }
 
@@ -198,16 +201,17 @@ p.life-story {
   padding: 15px 0;
 }
 .project-background.goodtimes {
-  background: linear-gradient(white 1%, rgba(87,93,152, 0.5) 33%, rgba(87,93,152, 0.5) 66%, white 100%);
+  margin: 0;
+  background: rgba(87, 93, 152, 0.5);
 }
 .project-background.atlas {
-  background: linear-gradient(white 1%, rgba(255, 155, 88, 0.9) 33%, rgba(255, 155, 88, 0.9) 66%, white 100%);
+  background:  rgba(255, 155, 88, 0.9);
 }
 .project-background.word-search-generator {
-  background: linear-gradient(white 1%, rgb(225, 225, 100) 33%, rgb(225, 225, 100) 66%, white 99%);
+  background:  rgb(225, 225, 100) 20px;
 }
 .project-background.endurance-data {
-  background: linear-gradient(white 1%, rgba(254, 121, 64, 0.8) 33%, rgba(254, 121, 64, 0.8) 66%, white 100%);
+  background: rgba(254, 121, 64, 0.8);
 }
 
 /* ----- --------------------------------- ---- */
@@ -354,8 +358,8 @@ span.project-content-title {
 
 @media only screen and (min-width: 1000px){
   .projects h2 {
-    margin-bottom: 100px;
-    margin-top: 140px;
+    margin-bottom: 60px;
+    margin-top: 50px;
   }
   .project-links {
     margin-bottom: 0;
@@ -408,7 +412,7 @@ footer {
 footer {
   position: relative;
   background-color: rgb(60, 60, 60);
-  padding: 50px 10px 50px 10px;
+  padding: 50px 10px 0 10px;
   color: white;
   text-align: center;
 }
@@ -474,11 +478,14 @@ li.phone-icon a:hover {
   width: 100%;
   padding-right: calc(100vw - 160px - 49%);
 }
+li.phone-paragraph p {
+  margin: 10px 0;
+}
 
 
 @media only screen and (min-width:600px){
   footer {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
   ul.icon-contacts li {
     width: 19%;
@@ -492,7 +499,7 @@ li.phone-icon a:hover {
   }
 
   .tooltip {
-    bottom: 115px;
+    top: 230px;
   }
   
   .tooltip.email {
@@ -516,8 +523,14 @@ li.phone-icon a:hover {
 
 }
 
+
+
+
+/* ----------------- PRELOADING SCREENSHOTS FOR CAROUSEL ----------------- */
 .preload-photos {
-  display: none;
+  position: fixed;
+  top: 10000px;
+  right: 10000px;
 }
 
 

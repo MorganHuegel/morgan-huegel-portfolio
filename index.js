@@ -61,38 +61,46 @@ let enduranceData = {
 
 
 function switchScreenshot(e, right) {
-  $(e.target).closest('div').off();
-  const images = $(e.target).closest('div').children('img');
-
+  const container = $(e.target.closest('div'));
+  $(container).off();
+  const image = $(e.target.closest('div')).find('img')[0];
   let app;
   switch (true) {
-    case images[0].classList.contains('goodtimes'):
+    case image.classList.contains('goodtimes'):
       app = goodtimes;
       break;
-    case images[0].classList.contains('atlas'):
+    case image.classList.contains('atlas'):
       app = atlas;
       break;
-    case images[0].classList.contains('word-search-generator'):
+    case image.classList.contains('word-search-generator'):
       app = wordSearch;
       break;
-    case images[0].classList.contains('endurancedata'):
+    case image.classList.contains('endurancedata'):
       app = enduranceData;
       break;
   }
-  
-  
 
-  let spanList = $(e.target).closest('.screenshot-container').find('.screenshot-bubbles').children();
+  let spanList = $(image).parent().find('.screenshot-bubbles').children();
   $(spanList[app.counter]).css('background-color', 'gray');
-  $(images[app.counter]).fadeOut(200, () => {
-    if (right) app.counter = (app.counter + 1) % app.sources.length;
-    else if (app.counter === 0) app.counter = app.sources.length - 1;
-    else app.counter = app.counter - 1;
 
-    $(spanList[app.counter]).css('background-color', 'white');
-    $(images[app.counter]).fadeIn(200, () => {
-      $(e.target).closest('div').on('click', '.arrow.right', (e) => switchScreenshot(e, true));
-      $(e.target).closest('div').on('click', '.arrow.left', (e) => switchScreenshot(e, false));
+  if (right) app.counter = (app.counter + 1) % app.sources.length;
+  else if (app.counter === 0) app.counter = app.sources.length - 1;
+  else app.counter = app.counter - 1;
+
+  $(spanList[app.counter]).css('background-color', 'white');
+
+  let newImage;
+  $(image).fadeOut(200, () => {
+    $(image).replaceWith(`<img class='screenshot ${app.className}' src='${app.sources[app.counter]}' alt='screen shot of ${app.className} App' style='display:none'/>`);
+    newImage = $(container).find('img');
+    if ($(newImage).attr('src').includes('mobile')) {
+      $(newImage).addClass('mobile');
+    } else {
+      $(newImage).removeClass('mobile');
+    }
+    $(newImage).fadeIn(300, () => {
+      $(container).on('click', '.arrow.right', e => switchScreenshot(e, true));
+      $(container).on('click', '.arrow.left', e => switchScreenshot(e, false));
     });
   });
 }
@@ -103,39 +111,12 @@ function switchScreenshot(e, right) {
 function eventListeners(){
   $('.screenshot-container').on('click', '.arrow.right', (e) => switchScreenshot(e, true));
   $('.screenshot-container').on('click', '.arrow.left', (e) => switchScreenshot(e, false));
-}
-
-function preloadImages() {
-  let image = $('.screenshot.goodtimes');
-  for (let i = goodtimes.sources.length - 1; i >= 0; i--) {
-    const src = goodtimes.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot goodtimes mobile' : 'screenshot goodtimes';
-    $(image).after(`<img class='${classes}' src='${src}' alt='screenshot of ${goodtimes.className}' style='display:none'/>`);  }
-
-  image = $('.screenshot.atlas');
-  for (let i = atlas.sources.length - 1; i >= 0; i--) {
-    const src = atlas.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot atlas mobile' : 'screenshot atlas';
-    $(image).after(`<img class='${classes}' src='${src}' alt='screenshot of ${atlas.className}' style='display:none'/>`);
-  }
-
-  image = $('.screenshot.word-search-generator');
-  for (let i = wordSearch.sources.length - 1; i >= 0; i--) {
-    const src = wordSearch.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot word-search-generator mobile' : 'screenshot word-search-generator';
-    $(image).after(`<img src='${src}' class='${classes}' alt='screenshot of ${wordSearch.className}' style='display:none'/>`);
-  }
-
-  image = $('.screenshot.endurancedata');
-  for (let i = enduranceData.sources.length - 1; i >= 0; i--) {
-    const src = enduranceData.sources[i];
-    if (src.includes('main')) continue;
-    const classes = src.includes('mobile') ? 'screenshot endurancedata mobile' : 'screenshot endurancedata';
-    $(image).after(`<img src='${src}' class='${classes}' alt='screenshot of ${enduranceData.className}' style='display:none'/>`);
-  }
+  // $('.screenshot-container').on('mouseenter', e => {
+  //   console.log(e.target);
+  // });
+  // $('.screenshot-container').on('mouseleave', e => {
+  //   console.log(e.target);
+  // });
 }
 
 
@@ -167,5 +148,4 @@ function screenshotBubbles() {
 $(() => {
   eventListeners();
   screenshotBubbles();
-  preloadImages();
 });
