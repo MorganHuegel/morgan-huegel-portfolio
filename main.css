@@ -12,6 +12,7 @@ body * {
 }
 
 body {
+  display: none;
   margin: 0px;
 }
 
@@ -29,6 +30,13 @@ hr.project-break {
 
 
 /* --------------------- Styling the Landing Page ------------------------ */
+.landing-page * {
+  font-size: calc(100vw / 20);
+  word-break: break-all;
+  font-family: 'Monaco', 'monospace';
+  font-weight: 100;
+  line-height: calc(100vw / 15);
+}
 .landing-page {
   position: relative;
   padding: 10px;
@@ -36,42 +44,28 @@ hr.project-break {
   background-color: black;
   color: white;
 }
-.landing-page h1 {
-  font-size: calc(100vw / 20);
-  word-break: break-all;
-  font-family: 'Monaco', 'monospace';
-  font-weight: 100;
-  line-height: calc(100vw / 15);
+
+.landing-page .cursor.open {
+  color: black;
+  background-color: black;
+  border: 3px solid white;
 }
-.landing-page h1 span {
-  font-size: calc(100vw / 20);
-  font-family: 'Monaco', 'monospace';
-  font-weight: 100;
-}
+
 .landing-page .cursor {
   background-color: white;
 }
-.landing-page .scroll-cue {
-  display: inline-block;
-  position: absolute;
-  bottom: 40px;
-  left: calc(50vw - 54px);
-  text-align: center;
-}
-.landing-page p {
-  font-family: 'Monaco', 'monospace';
-}
+
 @media only screen and (max-width: 450px) {
-  .landing-page h1, .landing-page h1 span {
+  .landing-page * {
     font-size: 22px;
     line-height: 30px;
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .landing-page h1, .landing-page h1 span {
-    font-size: 50px;
-    line-height: 66px;
+@media only screen and (min-width: 900px) {
+  .landing-page * {
+    font-size: 45px;
+    line-height: 59.4px;
   }
 }
 
@@ -107,6 +101,9 @@ header.banner .align-right {
   width: 49%;
   text-align: right;
 }
+header.banner .wide {
+  display: none;
+}
 
 @media only screen and (min-width: 390px) {
   header.banner .align-left {
@@ -118,6 +115,15 @@ header.banner .align-right {
   header.banner .align-right, header.banner .align-left {
     max-width: none;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  header.banner .thin {
+    display: none;
+  }
+  header.banner .wide {
+    display: inline-block;
   }
 }
 
