@@ -379,6 +379,7 @@ span.project-content-title {
 
 .arrow.left {
   top: calc(50% - 30px);
+  z-index: 2;
   
 }
 .arrow.right {
