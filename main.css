@@ -29,7 +29,11 @@ hr.project-break {
 }
 
 
+
 /* --------------------- Styling the Landing Page ------------------------ */
+.banner, main, footer {
+  display: none;
+}
 .landing-page * {
   font-size: calc(100vw / 20);
   word-break: break-all;

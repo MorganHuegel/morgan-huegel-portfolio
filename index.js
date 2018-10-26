@@ -166,6 +166,7 @@ function greeting(){
     $('.cursor').toggleClass('open');
   }, 4000);
   setTimeout(() => {
+    $('.banner, main, footer').show();
     $('.landing-page').slideUp();
   }, 5000);
 }
