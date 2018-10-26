@@ -167,7 +167,7 @@ function greeting(){
   }, 4000);
   setTimeout(() => {
     $('.banner, main, footer').show();
-    $('.landing-page').slideUp();
+    $('.landing-page').fadeOut(300);
   }, 5000);
 }
 
