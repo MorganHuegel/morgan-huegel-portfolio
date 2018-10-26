@@ -145,11 +145,34 @@ function screenshotBubbles() {
     $('.screenshot-bubbles.endurancedata').append(`<span class='bubble ${selected} ${index}'></span>`);
   });
   $('.screenshot-bubbles.endurancedata').css('left', `calc(50% - (15px * ${enduranceData.sources.length}) / 2)`);
+}
 
+
+function greeting(){
+  setTimeout(() => {
+    const greeting = 'hello world:)';
+    let counter = 0;
+    let spellGreeting = setInterval(() => {
+      if (counter === greeting.length) clearInterval(spellGreeting);
+      const newHtml = $('.greeting').html() + greeting.substring(counter, counter + 1);
+      $('.greeting').html(newHtml);
+      counter++;
+    }, 200);
+  }, 1000);
+  setTimeout(() => {
+    $('.cursor').toggleClass('open');
+  }, 500);
+  setTimeout(() => {
+    $('.cursor').toggleClass('open');
+  }, 4000);
+  setTimeout(() => {
+    $('.landing-page').slideUp();
+  }, 5000);
 }
 
 
 $(() => {
+  $('body').fadeIn(2000, () => greeting());
   eventListeners();
   screenshotBubbles();
 });
