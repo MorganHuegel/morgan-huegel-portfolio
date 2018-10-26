@@ -28,47 +28,94 @@ hr.project-break {
 }
 
 
+/* --------------------- Styling the Landing Page ------------------------ */
+.landing-page {
+  position: relative;
+  padding: 10px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+.landing-page h1 {
+  font-size: calc(100vw / 20);
+  word-break: break-all;
+  font-family: 'Monaco', 'monospace';
+  font-weight: 100;
+  line-height: calc(100vw / 15);
+}
+.landing-page h1 span {
+  font-size: calc(100vw / 20);
+  font-family: 'Monaco', 'monospace';
+  font-weight: 100;
+}
+.landing-page .cursor {
+  background-color: white;
+}
+.landing-page .scroll-cue {
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  left: calc(50vw - 54px);
+  text-align: center;
+}
+.landing-page p {
+  font-family: 'Monaco', 'monospace';
+}
+@media only screen and (max-width: 450px) {
+  .landing-page h1, .landing-page h1 span {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .landing-page h1, .landing-page h1 span {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
 
 
-/* --------------------- Styling the Header ------------------------ */
-header {
+/* --------------------- Styling the Fixed Header ------------------------ */
+header.banner {
   width: 100vw;
   color: white;
   padding: 10px;
   max-height: 150px;
-  background-color: rgb(60, 60, 60);
+  background-color: black;
 }
 
-.header-container {
+.banner .header-container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-h1 {
+.banner h1 {
   font-size: 1.35rem;
 }
-header span {
+header.banner span {
+  font-family: 'Monaco', 'monospace';
   display: inline-block;
   max-width: 179px;
 }
 
-header .align-left {
+header.banner .align-left {
   width: 49%;
   text-align: left;
 }
-header .align-right {
+header.banner .align-right {
   width: 49%;
   text-align: right;
 }
 
 @media only screen and (min-width: 390px) {
-  header .align-left {
+  header.banner .align-left {
     margin-right: calc(100vw - 390px)
   }
 }
 
 @media only screen and (min-width: 450px) {
-  header .align-right, header .align-left {
+  header.banner .align-right, header.banner .align-left {
     max-width: none;
     margin: 0;
   }
@@ -198,7 +245,7 @@ p.life-story {
 /* ----- Background Colors for each section ---- */
 .project-background {
   width: 100vw;
-  padding: 15px 0;
+  padding: 25px 0 15px 0;
 }
 .project-background.goodtimes {
   margin: 0;
