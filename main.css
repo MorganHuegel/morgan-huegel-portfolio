@@ -144,15 +144,20 @@ main {
 }
 
 .about-me-background {
-  padding-top: 20px;
-  background: linear-gradient(rgb(60, 60, 60), white 3px);
+  min-height: calc(100vh - 50px);
+  padding: 20px 0;
+  background: rgb(15, 95, 15);
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-me {
+  color: white;
   max-width: 1000px;
   padding: 10px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
 }
 
 .about-me .image-shadow {
@@ -181,16 +186,17 @@ main {
 }
 
 .about-me a:hover, .about-me a:focus {
-  background-color: rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
 }
 
 p.life-story {
   margin-top: 15px;
 }
 
-.life-story a {
-  font-style: italic;
+.about-me a {
+  color: white;
 }
+
 
 @media only screen and (min-width: 400px){
   .about-me-text {
@@ -200,8 +206,9 @@ p.life-story {
 
 
 @media only screen and (min-width: 1000px) {
-  .about-me {
-    margin-bottom: 150px;
+  .about-me-text p:first-child {
+    font-size: 2rem;
+    line-height: 1.5;
   }
   .about-me .image-container {
     display: inline-block;
@@ -228,7 +235,8 @@ p.life-story {
 /* ---------- Styling for Projects Section ------------ */
 .projects h2 {
   text-align: center;
-  margin-bottom: 35px;
+  margin-top: 50px;
+  margin-bottom: 60px;
   padding: 10px 20px;
   font-size: 2.2rem;
 }
@@ -450,10 +458,10 @@ span.project-content-title {
 }
 
 @media only screen and (min-width: 1000px){
-  .projects h2 {
+  /* .projects h2 {
     margin-bottom: 60px;
     margin-top: 50px;
-  }
+  } */
   .project-links {
     margin-bottom: 0;
   }
