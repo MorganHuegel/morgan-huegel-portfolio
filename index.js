@@ -51,6 +51,7 @@ let enduranceData = {
     './images/endurance-data/endurance-data-screenshot-main.png',
     './images/endurance-data/endurance-data-screenshot-view.png',
     './images/endurance-data/endurance-data-screenshot-adding-workout.png',
+    './images/endurance-data/endurance-data-screenshot-data-analysis.png',
     './images/endurance-data/endurance-data-screenshot-profile.png',
     './images/endurance-data/endurance-data-mobile-1.png',
     './images/endurance-data/endurance-data-mobile-2.png',
