@@ -102,6 +102,7 @@ header.banner span {
   font-family: 'Inconsolata', monospace;
   display: inline-block;
   max-width: 179px;
+  max-width: 166px;
 }
 
 header.banner .align-left {
@@ -116,20 +117,30 @@ header.banner .wide {
   display: none;
 }
 
-@media only screen and (min-width: 390px) {
+/* @media only screen and (min-width: 390px) {
   header.banner .align-left {
     margin-right: calc(100vw - 390px)
   }
+} */
+
+@media only screen and (min-width: 360px) {
+  header.banner .align-left {
+    margin-right: calc(100vw - 360px)
+  }
 }
 
-@media only screen and (min-width: 450px) {
+/* @media only screen and (min-width: 450px) {
   header.banner .align-right, header.banner .align-left {
     max-width: none;
     margin: 0;
   }
-}
+} */
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 655px) {
+  header.banner .align-right, header.banner .align-left {
+    max-width: none;
+    margin: 0;
+  }
   header.banner .thin {
     display: none;
   }
