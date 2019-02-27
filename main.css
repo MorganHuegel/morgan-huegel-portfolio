@@ -42,7 +42,8 @@ hr.project-break {
 .landing-page * {
   font-size: calc(100vw / 20);
   word-break: break-all;
-  font-family: 'Monaco', 'monospace';
+  /* font-family: 'Monaco', 'monospace'; */
+  font-family: 'Inconsolata', monospace;
   font-weight: 100;
   line-height: calc(100vw / 15);
 }
@@ -97,7 +98,8 @@ header.banner {
   font-size: 1.35rem;
 }
 header.banner span {
-  font-family: 'Monaco', 'monospace';
+  /* font-family: 'Monaco', 'monospace'; */
+  font-family: 'Inconsolata', monospace;
   display: inline-block;
   max-width: 179px;
 }
