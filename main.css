@@ -42,7 +42,6 @@ hr.project-break {
 .landing-page * {
   font-size: calc(100vw / 20);
   word-break: break-all;
-  /* font-family: 'Monaco', 'monospace'; */
   font-family: 'Inconsolata', monospace;
   font-weight: 100;
   line-height: calc(100vw / 15);
@@ -98,7 +97,6 @@ header.banner {
   font-size: 1.35rem;
 }
 header.banner span {
-  /* font-family: 'Monaco', 'monospace'; */
   font-family: 'Inconsolata', monospace;
   display: inline-block;
   max-width: 179px;
@@ -117,11 +115,6 @@ header.banner .wide {
   display: none;
 }
 
-/* @media only screen and (min-width: 390px) {
-  header.banner .align-left {
-    margin-right: calc(100vw - 390px)
-  }
-} */
 
 @media only screen and (min-width: 360px) {
   header.banner .align-left {
@@ -129,12 +122,6 @@ header.banner .wide {
   }
 }
 
-/* @media only screen and (min-width: 450px) {
-  header.banner .align-right, header.banner .align-left {
-    max-width: none;
-    margin: 0;
-  }
-} */
 
 @media only screen and (min-width: 655px) {
   header.banner .align-right, header.banner .align-left {
