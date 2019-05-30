@@ -270,6 +270,17 @@ p.life-story {
   width: 100vw;
   padding: 25px 0 15px 0;
 }
+.project-background.equation-relay {
+  background-color:rgb(184,100,96);
+  color: white;
+}
+.project-background.equation-relay a {
+  color: white;
+}
+.project-background.equation-relay a:hover, .project-background.equation-relay a:focus {
+  color: rgb(235, 235, 235);
+}
+
 .project-background.goodtimes {
   margin: 0;
   background: rgb(87, 93, 152);
@@ -304,7 +315,8 @@ p.life-story {
 .endurance-data a, .word-search-generator a {
   color: black;
 }
-.endurance-data a:hover, .endurance-data a:focus, .word-search-generator a:hover, .word-search-generator a:focus {
+.endurance-data a:hover, .endurance-data a:focus, 
+.word-search-generator a:hover, .word-search-generator a:focus {
   color: rgb(60, 60, 60);
 }
 
@@ -417,7 +429,7 @@ span.project-content-title {
 .back-end {
   border-left: 1px solid gray;
 }
-.atlas .back-end, .goodtimes .back-end {
+.atlas .back-end, .goodtimes .back-end, .equation-relay .back-end {
   border-left: 1px solid rgb(235, 235, 235);
 }
 .endurance-data .back-end {

@@ -1,6 +1,21 @@
 /* global $  */
 'use strict';
 
+let equationRelay = {
+  className: 'equation-relay',
+  counter: 0,
+  sources: [
+    './images/equation-relay/er-screenshot-teacher-join.png',
+    './images/equation-relay/er-screenshot-join-page.png',
+    './images/equation-relay/er-screenshot-player-gameplay.png',
+    './images/equation-relay/er-screenshot-guessing.png',
+    './images/equation-relay/er-screenshot-final-results.png',
+    './images/equation-relay/er-screenshot-teacher-dashboard.png',
+    './images/equation-relay/er-screenshot-create-questions.png',
+    './images/equation-relay/er-screenshot-validations.png',
+  ]
+};
+
 let goodtimes = {
   className: 'goodtimes',
   counter: 0,
@@ -67,18 +82,21 @@ function switchScreenshot(e, right) {
   const image = $(e.target.closest('div')).find('img')[0];
   let app;
   switch (true) {
-    case image.classList.contains('goodtimes'):
-      app = goodtimes;
-      break;
-    case image.classList.contains('atlas'):
-      app = atlas;
-      break;
-    case image.classList.contains('word-search-generator'):
-      app = wordSearch;
-      break;
-    case image.classList.contains('endurancedata'):
-      app = enduranceData;
-      break;
+  case image.classList.contains('equation-relay'):
+    app = equationRelay;
+    break;
+  case image.classList.contains('goodtimes'):
+    app = goodtimes;
+    break;
+  case image.classList.contains('atlas'):
+    app = atlas;
+    break;
+  case image.classList.contains('word-search-generator'):
+    app = wordSearch;
+    break;
+  case image.classList.contains('endurancedata'):
+    app = enduranceData;
+    break;
   }
 
   let spanList = $(image).parent().find('.screenshot-bubbles').children();
