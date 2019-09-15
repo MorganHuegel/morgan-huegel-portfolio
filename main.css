@@ -281,6 +281,20 @@ p.life-story {
   color: rgb(235, 235, 235);
 }
 
+.project-background.owen-wilsnake {
+  background-color: rgb(26, 26, 26);
+  color: white;
+}
+.project-background.owen-wilsnake a {
+  color: white;
+}
+.project-background.owen-wilsnake a:hover, .project-background.owen-wilsnake a:focus {
+  color: rgb(235, 235, 235);
+}
+.owen-note {
+  font-style: italic;
+}
+
 .project-background.goodtimes {
   margin: 0;
   background: rgb(87, 93, 152);
@@ -500,6 +514,9 @@ span.project-content-title {
   .project-background {
     position: relative;
     right: calc((100vw - 1000px) / 2 );
+  }
+  .owen-note {
+    margin-top: 10px;
   }
   .description-container.endurancedata, .description-container.atlas {
     position: relative;
