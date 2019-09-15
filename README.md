@@ -16,6 +16,20 @@ www.morganhuegel.com
 
 ## Project Links
 
+### Equation Relay
+
+[Live App](https://www.equationrelay.com)
+
+[GitHub Repo](https://github.com/MorganHuegel/equation-relay-client)
+
+
+### Owen Wilsnake
+
+[App Demo](https://www.youtube.com/watch?v=3iYVN86KMyo)
+
+[GitHub Repo](https://github.com/MorganHuegel/Owen-WilSnake)
+
+
 ### Goodtimes
 
 [Live App](https://goodtimes-client.herokuapp.com/)
