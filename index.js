@@ -16,6 +16,19 @@ let equationRelay = {
   ]
 };
 
+let owenWilsnake = {
+  className: 'owen-wilsnake',
+  counter: 0,
+  sources: [
+    './images/owen-wilsnake/owen-wilsnake-mobile-gameplay.png',
+    './images/owen-wilsnake/owen-wilsnake-mobile-crash.png',
+    './images/owen-wilsnake/owen-wilsnake-mobile-high-scores.png',
+    './images/owen-wilsnake/owen-wilsnake-mobile-login.png',
+    './images/owen-wilsnake/owen-wilsnake-mobile-landing.png',
+    './images/owen-wilsnake/owen-wilsnake-mobile-app-icon.png',
+  ]
+};
+
 let goodtimes = {
   className: 'goodtimes',
   counter: 0,
@@ -85,6 +98,9 @@ function switchScreenshot(e, right) {
   case image.classList.contains('equation-relay'):
     app = equationRelay;
     break;
+  case image.classList.contains('owen-wilsnake'):
+    app = owenWilsnake;
+    break;
   case image.classList.contains('goodtimes'):
     app = goodtimes;
     break;
@@ -130,17 +146,23 @@ function switchScreenshot(e, right) {
 function eventListeners(){
   $('.screenshot-container').on('click', '.arrow.right', (e) => switchScreenshot(e, true));
   $('.screenshot-container').on('click', '.arrow.left', (e) => switchScreenshot(e, false));
-  // $('.screenshot-container').on('mouseenter', e => {
-  //   console.log(e.target);
-  // });
-  // $('.screenshot-container').on('mouseleave', e => {
-  //   console.log(e.target);
-  // });
 }
 
 
 
 function screenshotBubbles() {
+  equationRelay.sources.forEach( (source, index) => {
+    const selected = index === 0 ? 'selected-bubble' : '';
+    $('.screenshot-bubbles.equation-relay').append(`<span class='bubble ${selected} ${index}'></span>`);
+  });
+  $('.screenshot-bubbles.equation-relay').css('left', `calc(50% - (15px * ${equationRelay.sources.length}) / 2)`);
+
+  owenWilsnake.sources.forEach( (source, index) => {
+    const selected = index === 0 ? 'selected-bubble' : '';
+    $('.screenshot-bubbles.owen-wilsnake').append(`<span class='bubble ${selected} ${index}'></span>`);
+  });
+  $('.screenshot-bubbles.owen-wilsnake').css('left', `calc(50% - (15px * ${owenWilsnake.sources.length}) / 2)`);
+
   goodtimes.sources.forEach( (source, index) => {
     const selected = index === 0 ? 'selected-bubble' : '';
     $('.screenshot-bubbles.goodtimes').append(`<span class='bubble ${selected} ${index}'></span>`);
