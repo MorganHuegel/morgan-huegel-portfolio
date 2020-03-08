@@ -198,26 +198,26 @@ function greeting(){
       const newHtml = $('.greeting').html() + greeting.substring(counter, counter + 1);
       $('.greeting').html(newHtml);
       counter++;
-    }, 200);
-  }, 1000);
+    }, 150);
+  }, 200);
   setTimeout(() => {
     $('.cursor').toggleClass('open');
-  }, 500);
+  }, 0);
   setTimeout(() => {
     $('.cursor').toggleClass('open');
-  }, 4000);
+  }, 2500);
   setTimeout(() => {
-    $('body').fadeOut(600, () => {
+    $('body').fadeOut(500, () => {
       $('.landing-page').hide();
       $('.banner, main, footer').show();
       $('body').fadeIn(300);
     });
-  }, 5000);
+  }, 3000);
 }
 
 
 $(() => {
-  $('body').fadeIn(1500, () => greeting());
+  $('body').fadeIn(1000, () => greeting());
   eventListeners();
   screenshotBubbles();
 });
