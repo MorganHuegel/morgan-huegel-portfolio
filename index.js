@@ -63,8 +63,10 @@ let seatTalk = {
   counter: 0,
   sources: [
     "./images/seat-talk/seat-talk-landing.png",
+    "./images/seat-talk/seat-talk-full-room.png",
     "./images/seat-talk/seat-talk-empty-room.png",
     "./images/seat-talk/seat-talk-mobile-1.png",
+    "./images/seat-talk/seat-talk-mobile-2.png",
   ],
 };
 
